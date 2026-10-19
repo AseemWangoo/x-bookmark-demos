@@ -1,13 +1,15 @@
 {
-  "proposed": [
+  "proposed": [],
+  "approved": [
     {
       "id": "openui-1-0",
       "title": "OpenUI 1.0 (Thesys generative UI, OpenUI Lang)",
       "url": "https://x.com/testingcatalog/status/2110765439798087835",
       "source": "trending",
-      "date": "2026-10-19"
+      "date": "2026-10-19",
+      "approved": "2026-10-19",
+      "slug": "openui-trip-planner"
     }
   ],
-  "approved": [],
   "skipped": []
 }
