@@ -13,3 +13,4 @@ bun install && bun run dev
 
 | Name | Source bookmark | PR |
 | ---- | --------------- | -- |
+| OpenUI Trip Planner | [OpenUI 1.0](https://x.com/testingcatalog/status/2110765439798087835) | |
