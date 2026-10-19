@@ -19,6 +19,7 @@ function handleAction(
       onBooked();
       toast.success("Booked (mock)", {
         description: `${event.params.city} · ${event.params.days} days · ${formatMoney(event.params.total, currencyFor(event.params.city))}`,
+        duration: 8000,
       });
       return;
     }
