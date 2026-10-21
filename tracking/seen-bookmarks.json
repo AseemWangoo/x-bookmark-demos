@@ -1,13 +1,5 @@
 {
-  "proposed": [
-    {
-      "id": "cloudflare-clairic",
-      "title": "Clairic (Cloudflare Workers AI System One extraction model)",
-      "url": "https://x.com/michellechen/status/2112241006104244584",
-      "source": "trending",
-      "date": "2026-10-21"
-    }
-  ],
+  "proposed": [],
   "approved": [
     {
       "id": "openui-1-0",
@@ -17,6 +9,15 @@
       "date": "2026-10-19",
       "approved": "2026-10-19",
       "slug": "openui-trip-planner"
+    },
+    {
+      "id": "cloudflare-clairic",
+      "title": "Clairic (Cloudflare Workers AI System One extraction model)",
+      "url": "https://x.com/michellechen/status/2112241006104244584",
+      "source": "trending",
+      "date": "2026-10-21",
+      "approved": "2026-10-21",
+      "slug": "clairic-receipt-extractor"
     }
   ],
   "skipped": []
