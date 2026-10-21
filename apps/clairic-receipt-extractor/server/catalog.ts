@@ -1,8 +1,5 @@
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
 import type { FieldSpec, Fixture, FixtureKind } from "../src/lib/types.ts";
-
-const fixturesDir = join(import.meta.dir, "../fixtures");
+import { fixtureSources } from "./fixture-data.ts";
 
 const receiptFields: FieldSpec[] = [
   { name: "merchant", type: "text", instructions: "Store or restaurant name" },
@@ -94,7 +91,6 @@ const catalog: Array<{
   kind: FixtureKind;
   title: string;
   blurb: string;
-  file: string;
   presetFields: FieldSpec[];
 }> = [
   {
@@ -102,7 +98,6 @@ const catalog: Array<{
     kind: "receipt",
     title: "Coffee receipt",
     blurb: "Cafe receipt. Loyalty id is absent.",
-    file: "receipt-coffee.txt",
     presetFields: receiptFields,
   },
   {
@@ -110,7 +105,6 @@ const catalog: Array<{
     kind: "invoice",
     title: "Northwind invoice",
     blurb: "Docs example INV-2291, extended with line items.",
-    file: "invoice-northwind.txt",
     presetFields: invoiceFields,
   },
   {
@@ -118,7 +112,6 @@ const catalog: Array<{
     kind: "email",
     title: "Damaged-order email",
     blurb: "Support email from the Clairic launch post.",
-    file: "email-damaged-order.txt",
     presetFields: emailFields,
   },
   {
@@ -126,10 +119,15 @@ const catalog: Array<{
     kind: "bank",
     title: "Messy bank transactions",
     blurb: "Processor descriptors. Payee names are the weak spot.",
-    file: "bank-transactions-messy.txt",
     presetFields: bankFields,
   },
 ];
+
+function sourceFor(id: string): string {
+  const source = fixtureSources[id];
+  if (source === undefined) throw new Error(`missing fixture source: ${id}`);
+  return source;
+}
 
 export function listFixtures(): Fixture[] {
   return catalog.map((entry) => ({
@@ -137,7 +135,7 @@ export function listFixtures(): Fixture[] {
     kind: entry.kind,
     title: entry.title,
     blurb: entry.blurb,
-    source: readFileSync(join(fixturesDir, entry.file), "utf8"),
+    source: sourceFor(entry.id),
     presetFields: entry.presetFields.map((field) => ({ ...field })),
   }));
 }

@@ -61,3 +61,19 @@ Constants live in `src/lib/pricing.ts` and are re-exported from `server/pricing.
 - Messy bank descriptors. Payee extraction is the weak spot called out in [this critique](https://x.com/jlongster/status/2112725692517605868)
 
 A field that was not recorded comes back as `not recorded: switch to live mode`. Sample mode does not invent values.
+
+## Vercel
+
+Create the project from this GitHub repo and set the root directory to `apps/clairic-receipt-extractor`. Production deploys from `main`. `vercel.json` pins the build:
+
+| Setting | Value |
+| --- | --- |
+| Framework | Vite |
+| Install command | `bun install` |
+| Build command | `bun run build` |
+| Output directory | `dist` |
+| Node.js version | 22.x (`engines.node`) |
+
+Leave the function runtime on Node.js. Do not set `bunVersion`. `/api/mode`, `/api/fixtures`, and `/api/extract` are the files in `api/`. Sample mode needs no environment variables. Live mode uses `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` on the server.
+
+Fixture text and recordings are imported into those functions. They are not read from disk at runtime.
