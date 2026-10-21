@@ -1,5 +1,13 @@
 {
-  "proposed": [],
+  "proposed": [
+    {
+      "id": "cloudflare-clairic",
+      "title": "Clairic (Cloudflare Workers AI System One extraction model)",
+      "url": "https://x.com/michellechen/status/2112241006104244584",
+      "source": "trending",
+      "date": "2026-10-21"
+    }
+  ],
   "approved": [
     {
       "id": "openui-1-0",
