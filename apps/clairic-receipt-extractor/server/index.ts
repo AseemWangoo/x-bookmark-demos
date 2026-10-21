@@ -1,6 +1,6 @@
 import { listFixtures } from "./catalog.ts";
-import { handleExtract, handleMode } from "./extract.ts";
-import { HttpError } from "./schema.ts";
+import { handleMode } from "./extract.ts";
+import { handleExtractRequest } from "./http.ts";
 
 const port = Number(process.env.API_PORT ?? 8787);
 
@@ -14,15 +14,7 @@ const server = Bun.serve({
       GET: () => Response.json(listFixtures()),
     },
     "/api/extract": {
-      POST: async (req) => {
-        try {
-          const body: unknown = await req.json();
-          return Response.json(await handleExtract(body));
-        } catch (error) {
-          const http = error instanceof HttpError ? error : new HttpError(400, "Invalid JSON");
-          return Response.json({ error: http.message }, { status: http.status });
-        }
-      },
+      POST: (req) => handleExtractRequest(req),
     },
   },
   fetch() {

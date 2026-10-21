@@ -1,0 +1,6 @@
+// Fixture text imported by the API. Kept in this module so Vercel bundles it
+// instead of reading the .txt files from disk at runtime.
+export const receiptCoffeeSource = "BLUE BOTTLE COFFEE\n66 Mint St\nSan Francisco, CA 94103\n\nOrder #4821\n2026-03-14 08:42\n\n1  Oat Latte            5.75\n1  Almond Croissant     4.50\n\nSubtotal               10.25\nTax                     0.92\nTip                     2.00\nTotal                  13.17\n\nVisa ****4242\n";
+export const invoiceNorthwindSource = "Invoice INV-2291 from Northwind Supply, issued 2026-09-02, net 30. 4 pallets at $250.00 each, shipping $80.00. Contact: Dana Ruiz, Priya Shah.\nLine items:\n- Oak pallets\n- Freight\nBill to: Harbor & Co.\n";
+export const emailDamagedOrderSource = "Hi, order A-88412 arrived on Sept 28, 2026 with a cracked screen and a dented corner. I paid $649.00 plus $52.10 tax. It's now Oct 9, 2026 and I'd like this fixed or refunded. Thanks, Dana\n";
+export const bankTransactionsSource = "10/02 ACH DEBIT SQ *COFFEE 8841 SAN FRANCISCO CA 4.75\n10/03 POS DEBIT TST* BLUE BOTTLE #12 13.17\n10/04 CHECKCARD AMAZON.COM*AB3K91 AMZN.COM/BILL WA 42.19\n10/05 ACH PAYMENT VENMO CASHOUT *JANE D. 25.00\n10/06 WIRE IN REF 449201 FROM ACME LLC DBA NORTHWIND 1080.00\n";

@@ -1,5 +1,3 @@
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
 import { clairicCostUsd, llmCostUsd } from "../src/lib/pricing.ts";
 import {
   UNRECORDED,
@@ -14,9 +12,8 @@ import {
   type TokenUsage,
 } from "../src/lib/types.ts";
 import { listFixtures } from "./catalog.ts";
+import { fixtureRecordings, type FixtureRecordingFile } from "./fixture-data.ts";
 import { parseAnswer } from "./normalize.ts";
-
-const fixturesDir = join(import.meta.dir, "../fixtures");
 
 export const SAMPLE_DELAY_SCALE = 0.2;
 export const SAMPLE_DELAY_MIN_MS = 40;
@@ -79,14 +76,8 @@ function matchFixture(request: ExtractRequest): Fixture | null {
 }
 
 function readRecording(id: string, kind: "clairic" | "llm"): Recording {
-  const raw = JSON.parse(readFileSync(join(fixturesDir, `${id}.${kind}.json`), "utf8")) as {
-    synthetic?: boolean;
-    latencyMs: number;
-    model: string;
-    truncated?: boolean;
-    usage: TokenUsage;
-    answers: Record<string, unknown>;
-  };
+  const raw = fixtureRecordings[id]?.[kind];
+  if (!raw) throw new Error(`missing recording ${id}.${kind}`);
   const answers: Record<string, Answer> = {};
   for (const [name, answer] of Object.entries(raw.answers)) {
     answers[name] = parseAnswer(answer);
@@ -96,8 +87,31 @@ function readRecording(id: string, kind: "clairic" | "llm"): Recording {
     latencyMs: raw.latencyMs,
     model: raw.model,
     truncated: raw.truncated,
-    usage: raw.usage,
+    usage: usageOf(raw),
     answers,
+  };
+}
+
+function usageOf(raw: FixtureRecordingFile): TokenUsage {
+  const usage = raw.usage;
+  if (
+    usage.state_tokens !== undefined &&
+    usage.image_tokens !== undefined &&
+    usage.schema_tokens !== undefined &&
+    usage.passes !== undefined
+  ) {
+    return {
+      state_tokens: usage.state_tokens,
+      image_tokens: usage.image_tokens,
+      schema_tokens: usage.schema_tokens,
+      input_tokens: usage.input_tokens,
+      output_tokens: usage.output_tokens,
+      passes: usage.passes,
+    };
+  }
+  return {
+    input_tokens: usage.input_tokens,
+    output_tokens: usage.output_tokens,
   };
 }
 

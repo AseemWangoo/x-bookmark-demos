@@ -16,11 +16,14 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "jsx": "react-jsx",
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true
   },
   "include": [
+    "api",
     "server",
     "scripts",
+    "fixtures/sources.ts",
     "src/lib/types.ts",
     "src/lib/pricing.ts",
     "src/source/segments.ts"
