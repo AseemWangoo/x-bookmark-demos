@@ -1,0 +1,48 @@
+{
+  "synthetic": true,
+  "latencyMs": 2540,
+  "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+  "usage": {
+    "input_tokens": 690,
+    "output_tokens": 110
+  },
+  "answers": {
+    "payees": {
+      "type": "list",
+      "value": [
+        "Square",
+        "Blue Bottle",
+        "Amazon",
+        "Jane D.",
+        "Northwind"
+      ],
+      "spans": null,
+      "confidence": null,
+      "p_null": null
+    },
+    "canonical_payee": {
+      "type": "text",
+      "value": "Square",
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "span": null
+    },
+    "check_number": {
+      "type": "text",
+      "value": "449201",
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "span": null
+    },
+    "debit_total": {
+      "type": "number",
+      "value": 85.11,
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "unit": "USD"
+    }
+  }
+}

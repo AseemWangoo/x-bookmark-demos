@@ -1,0 +1,60 @@
+{
+  "synthetic": true,
+  "latencyMs": 1675,
+  "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+  "usage": {
+    "input_tokens": 580,
+    "output_tokens": 88
+  },
+  "answers": {
+    "order_id": {
+      "type": "text",
+      "value": "A-88412",
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "span": null
+    },
+    "delivered_on": {
+      "type": "date",
+      "value": "2026-09-28",
+      "guess": null,
+      "confidence": null,
+      "p_null": null
+    },
+    "amount_paid": {
+      "type": "number",
+      "value": 649,
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "unit": "USD"
+    },
+    "days_since_delivery": {
+      "type": "duration",
+      "value": null,
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "unit": "days"
+    },
+    "damage": {
+      "type": "list",
+      "value": [
+        "cracked screen",
+        "dented corner"
+      ],
+      "spans": null,
+      "confidence": null,
+      "p_null": null
+    },
+    "tracking_number": {
+      "type": "text",
+      "value": null,
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "span": null
+    }
+  }
+}

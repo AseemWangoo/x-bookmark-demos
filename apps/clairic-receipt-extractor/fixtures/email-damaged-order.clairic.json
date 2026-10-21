@@ -1,0 +1,80 @@
+{
+  "synthetic": true,
+  "latencyMs": 214,
+  "model": "clairic",
+  "truncated": false,
+  "usage": {
+    "state_tokens": 64,
+    "image_tokens": 0,
+    "schema_tokens": 360,
+    "input_tokens": 490,
+    "output_tokens": 0,
+    "passes": 1
+  },
+  "answers": {
+    "order_id": {
+      "type": "text",
+      "p_null": 0.0000034,
+      "span": [
+        10,
+        17
+      ],
+      "guess": "A-88412",
+      "confidence": 0.999957,
+      "value": "A-88412"
+    },
+    "delivered_on": {
+      "type": "date",
+      "p_null": 6.5e-8,
+      "guess": "2026-09-28",
+      "confidence": 0.999999,
+      "value": "2026-09-28"
+    },
+    "amount_paid": {
+      "type": "number",
+      "p_null": 0.000016,
+      "guess": 701.1,
+      "confidence": 0.999944,
+      "value": 701.1,
+      "unit": "USD"
+    },
+    "days_since_delivery": {
+      "type": "duration",
+      "p_null": 6.1e-9,
+      "unit": "days",
+      "guess": 11,
+      "confidence": 0.999999,
+      "value": 11
+    },
+    "damage": {
+      "type": "list",
+      "value": [
+        "cracked screen",
+        "dented corner"
+      ],
+      "spans": [
+        [
+          50,
+          64
+        ],
+        [
+          71,
+          84
+        ]
+      ],
+      "confidence": 0.994,
+      "p_null": 0.0000022
+    },
+    "tracking_number": {
+      "type": "text",
+      "p_null": 1,
+      "span": [
+        106,
+        112
+      ],
+      "guess": "$52.10",
+      "confidence": 0.416016,
+      "value": null
+    }
+  }
+}

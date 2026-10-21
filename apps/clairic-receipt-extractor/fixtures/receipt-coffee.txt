@@ -1,0 +1,16 @@
+BLUE BOTTLE COFFEE
+66 Mint St
+San Francisco, CA 94103
+
+Order #4821
+2026-03-14 08:42
+
+1  Oat Latte            5.75
+1  Almond Croissant     4.50
+
+Subtotal               10.25
+Tax                     0.92
+Tip                     2.00
+Total                  13.17
+
+Visa ****4242

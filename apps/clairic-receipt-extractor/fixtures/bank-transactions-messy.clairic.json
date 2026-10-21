@@ -1,0 +1,80 @@
+{
+  "synthetic": true,
+  "latencyMs": 336,
+  "model": "clairic",
+  "truncated": false,
+  "usage": {
+    "state_tokens": 110,
+    "image_tokens": 0,
+    "schema_tokens": 300,
+    "input_tokens": 520,
+    "output_tokens": 0,
+    "passes": 1
+  },
+  "answers": {
+    "payees": {
+      "type": "list",
+      "value": [
+        "SQ *COFFEE 8841",
+        "BLUE BOTTLE #12",
+        "AMAZON.COM*AB3K91",
+        "JANE D.",
+        "ACME LLC DBA NORTHWIND"
+      ],
+      "spans": [
+        [
+          16,
+          31
+        ],
+        [
+          75,
+          90
+        ],
+        [
+          113,
+          130
+        ],
+        [
+          187,
+          194
+        ],
+        [
+          231,
+          253
+        ]
+      ],
+      "confidence": 0.22,
+      "p_null": 0.41
+    },
+    "canonical_payee": {
+      "type": "text",
+      "p_null": 0.91,
+      "span": [
+        16,
+        31
+      ],
+      "guess": "SQ *COFFEE 8841",
+      "confidence": 0.18,
+      "value": null
+    },
+    "check_number": {
+      "type": "text",
+      "p_null": 0.98,
+      "span": [
+        219,
+        225
+      ],
+      "guess": "449201",
+      "confidence": 0.16,
+      "value": null
+    },
+    "debit_total": {
+      "type": "number",
+      "value": null,
+      "guess": 1165.11,
+      "confidence": 0.31,
+      "p_null": 0.74,
+      "unit": "USD"
+    }
+  }
+}
