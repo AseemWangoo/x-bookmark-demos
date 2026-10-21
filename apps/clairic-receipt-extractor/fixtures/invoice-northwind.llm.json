@@ -1,0 +1,77 @@
+{
+  "synthetic": true,
+  "latencyMs": 1980,
+  "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+  "usage": {
+    "input_tokens": 740,
+    "output_tokens": 128
+  },
+  "answers": {
+    "invoice_number": {
+      "type": "text",
+      "value": "INV-2291",
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "span": null
+    },
+    "vendor": {
+      "type": "text",
+      "value": "Northwind Supply",
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "span": null
+    },
+    "issued": {
+      "type": "date",
+      "value": "2026-09-02",
+      "guess": null,
+      "confidence": null,
+      "p_null": null
+    },
+    "due_date": {
+      "type": "date",
+      "value": "2026-09-02",
+      "guess": null,
+      "confidence": null,
+      "p_null": null
+    },
+    "total": {
+      "type": "number",
+      "value": 1000,
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "unit": "USD"
+    },
+    "line_items": {
+      "type": "list",
+      "value": [
+        "Oak pallets",
+        "Freight"
+      ],
+      "spans": null,
+      "confidence": null,
+      "p_null": null
+    },
+    "contacts": {
+      "type": "list",
+      "value": [
+        "Dana Ruiz",
+        "Priya Shah"
+      ],
+      "spans": null,
+      "confidence": null,
+      "p_null": null
+    },
+    "po_number": {
+      "type": "text",
+      "value": null,
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "span": null
+    }
+  }
+}

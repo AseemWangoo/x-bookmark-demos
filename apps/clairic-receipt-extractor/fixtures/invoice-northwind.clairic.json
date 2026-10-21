@@ -1,0 +1,109 @@
+{
+  "synthetic": true,
+  "latencyMs": 248,
+  "model": "clairic",
+  "truncated": false,
+  "usage": {
+    "state_tokens": 96,
+    "image_tokens": 0,
+    "schema_tokens": 440,
+    "input_tokens": 610,
+    "output_tokens": 0,
+    "passes": 2
+  },
+  "answers": {
+    "invoice_number": {
+      "type": "text",
+      "p_null": 3.8e-10,
+      "span": [
+        8,
+        16
+      ],
+      "guess": "INV-2291",
+      "confidence": 1,
+      "value": "INV-2291"
+    },
+    "vendor": {
+      "type": "text",
+      "p_null": 2.4e-9,
+      "span": [
+        22,
+        38
+      ],
+      "guess": "Northwind Supply",
+      "confidence": 0.999,
+      "value": "Northwind Supply"
+    },
+    "issued": {
+      "type": "date",
+      "p_null": 4.4e-8,
+      "guess": "2026-09-02",
+      "confidence": 0.9992,
+      "value": "2026-09-02"
+    },
+    "due_date": {
+      "type": "date",
+      "p_null": 1.9e-8,
+      "guess": "2026-10-02",
+      "confidence": 0.9999,
+      "value": "2026-10-02"
+    },
+    "total": {
+      "type": "number",
+      "p_null": 2.3e-8,
+      "guess": 1080,
+      "confidence": 0.9999,
+      "value": 1080,
+      "unit": "USD"
+    },
+    "line_items": {
+      "type": "list",
+      "value": [
+        "Oak pallets",
+        "Freight"
+      ],
+      "spans": [
+        [
+          157,
+          168
+        ],
+        [
+          171,
+          178
+        ]
+      ],
+      "confidence": 0.981,
+      "p_null": 0.000001
+    },
+    "contacts": {
+      "type": "list",
+      "value": [
+        "Dana Ruiz",
+        "Priya Shah"
+      ],
+      "spans": [
+        [
+          120,
+          129
+        ],
+        [
+          131,
+          141
+        ]
+      ],
+      "confidence": 0.9999,
+      "p_null": 4.2e-8
+    },
+    "po_number": {
+      "type": "text",
+      "p_null": 1,
+      "span": [
+        8,
+        16
+      ],
+      "guess": "INV-2291",
+      "confidence": 0.9995,
+      "value": null
+    }
+  }
+}

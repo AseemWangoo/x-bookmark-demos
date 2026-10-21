@@ -1,0 +1,84 @@
+{
+  "synthetic": true,
+  "latencyMs": 1420,
+  "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+  "usage": {
+    "input_tokens": 610,
+    "output_tokens": 96
+  },
+  "answers": {
+    "merchant": {
+      "type": "text",
+      "value": "BLUE BOTTLE COFFEE",
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "span": null
+    },
+    "loyalty_id": {
+      "type": "text",
+      "value": null,
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "span": null
+    },
+    "purchased_at": {
+      "type": "datetime",
+      "value": "2026-03-14T08:42:00",
+      "guess": null,
+      "confidence": null,
+      "p_null": null
+    },
+    "items": {
+      "type": "list",
+      "value": [
+        "Oat Latte",
+        "Almond Croissant"
+      ],
+      "spans": null,
+      "confidence": null,
+      "p_null": null
+    },
+    "subtotal": {
+      "type": "number",
+      "value": 10.25,
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "unit": "USD"
+    },
+    "tax": {
+      "type": "number",
+      "value": 0.92,
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "unit": "USD"
+    },
+    "tip": {
+      "type": "number",
+      "value": 2,
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "unit": "USD"
+    },
+    "total": {
+      "type": "number",
+      "value": 13.17,
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "unit": "USD"
+    },
+    "card_last4": {
+      "type": "text",
+      "value": "****4242",
+      "guess": null,
+      "confidence": null,
+      "p_null": null,
+      "span": null
+    }
+  }
+}
