@@ -1,5 +1,13 @@
 {
-  "proposed": [],
+  "proposed": [
+    {
+      "id": "openai-decisions-api",
+      "title": "OpenAI Decisions API (GPT-6 Luna predicate/choice/score decisions)",
+      "url": "https://x.com/testingcatalog/status/2113398273352368473",
+      "source": "trending",
+      "date": "2026-10-23"
+    }
+  ],
   "approved": [
     {
       "id": "openui-1-0",
