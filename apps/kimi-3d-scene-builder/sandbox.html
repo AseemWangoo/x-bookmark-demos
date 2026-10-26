@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+      Policy for the opaque frame (sandbox, no allow-same-origin).
+      Chrome 156 allows a classic same-URL script under script-src 'self', but a
+      type=module script is a CORS fetch from origin "null" and is blocked.
+      vite.sandbox-plugin.ts therefore serves an inlined classic IIFE and replaces
+      'self' with that script's sha256. 'unsafe-eval' is required for new Function.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self' 'unsafe-eval'; style-src 'unsafe-inline'; img-src data: blob:; connect-src 'none'; worker-src 'none'; frame-src 'none'; form-action 'none'; base-uri 'none'"
+    />
+    <title>Scene sandbox</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #111;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module" src="/src/sandbox/runtime.ts"></script>
+  </body>
+</html>
