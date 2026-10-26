@@ -1,5 +1,13 @@
 {
-  "proposed": [],
+  "proposed": [
+    {
+      "id": "kimi-k3-1-pro",
+      "title": "Kimi K3.1 Pro (Moonshot AI, 1M context, strong 3D/WebDev coding)",
+      "url": "https://x.com/i/trending/2113194116553257028",
+      "source": "trending",
+      "date": "2026-10-26"
+    }
+  ],
   "approved": [
     {
       "id": "openui-1-0",
