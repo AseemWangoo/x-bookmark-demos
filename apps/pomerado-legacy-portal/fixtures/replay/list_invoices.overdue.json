@@ -1,0 +1,80 @@
+{
+  "recordedAt": null,
+  "pomeradoVersion": null,
+  "synthetic": true,
+  "integration": "list_invoices",
+  "input": {
+    "status": "overdue"
+  },
+  "arguments": {
+    "input": {
+      "status": "overdue"
+    }
+  },
+  "trail": [
+    "replay",
+    "hand-written fixture, not a Pomerado run"
+  ],
+  "output": {
+    "invoices": [
+      {
+        "invoiceNumber": "INV-1001",
+        "vendor": "Acme Industrial",
+        "po": "PO-5001",
+        "amount": 1840.5,
+        "due": "2026-09-01",
+        "status": "OVERDUE"
+      },
+      {
+        "invoiceNumber": "INV-1004",
+        "vendor": "Northwind Traders",
+        "po": "PO-5004",
+        "amount": 920,
+        "due": "2026-09-15",
+        "status": "OVERDUE"
+      },
+      {
+        "invoiceNumber": "INV-1008",
+        "vendor": "Contoso Parts",
+        "po": "PO-5008",
+        "amount": 410.25,
+        "due": "2026-10-01",
+        "status": "OVERDUE"
+      },
+      {
+        "invoiceNumber": "INV-1012",
+        "vendor": "Fabrikam Supply",
+        "po": "PO-5012",
+        "amount": 2750,
+        "due": "2026-08-20",
+        "status": "OVERDUE"
+      },
+      {
+        "invoiceNumber": "INV-1019",
+        "vendor": "Adventure Works",
+        "po": "PO-5019",
+        "amount": 640,
+        "due": "2026-10-15",
+        "status": "OVERDUE"
+      },
+      {
+        "invoiceNumber": "INV-1025",
+        "vendor": "Wide World Importers",
+        "po": "PO-5025",
+        "amount": 3188.4,
+        "due": "2026-07-30",
+        "status": "OVERDUE"
+      },
+      {
+        "invoiceNumber": "INV-1031",
+        "vendor": "Litware Inc",
+        "po": "PO-5031",
+        "amount": 155,
+        "due": "2026-10-27",
+        "status": "OVERDUE"
+      }
+    ]
+  },
+  "coldMs": 6400,
+  "warmMs": 2100
+}

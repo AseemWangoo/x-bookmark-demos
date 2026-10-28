@@ -1,0 +1,33 @@
+{
+  "recordedAt": null,
+  "pomeradoVersion": null,
+  "synthetic": true,
+  "integration": "add_vendor",
+  "input": {
+    "name": "Globex Supply",
+    "email": "ap@globex.example",
+    "category": "Hardware",
+    "terms": "Net 30"
+  },
+  "arguments": {
+    "input": {
+      "name": "Globex Supply",
+      "email": "ap@globex.example",
+      "category": "Hardware",
+      "terms": "Net 30"
+    }
+  },
+  "trail": [
+    "replay",
+    "hand-written fixture, not a Pomerado run"
+  ],
+  "output": {
+    "vendorId": "V-1013",
+    "name": "Globex Supply",
+    "email": "ap@globex.example",
+    "category": "Hardware",
+    "terms": "Net 30"
+  },
+  "coldMs": 9100,
+  "warmMs": 3200
+}

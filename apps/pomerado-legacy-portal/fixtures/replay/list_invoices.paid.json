@@ -1,0 +1,128 @@
+{
+  "recordedAt": null,
+  "pomeradoVersion": null,
+  "synthetic": true,
+  "integration": "list_invoices",
+  "input": {
+    "status": "paid"
+  },
+  "arguments": {
+    "input": {
+      "status": "paid"
+    }
+  },
+  "trail": [
+    "replay",
+    "hand-written fixture, not a Pomerado run"
+  ],
+  "output": {
+    "invoices": [
+      {
+        "invoiceNumber": "INV-1020",
+        "vendor": "Acme Industrial",
+        "po": "PO-5020",
+        "amount": 500,
+        "due": "2026-06-01",
+        "status": "Paid"
+      },
+      {
+        "invoiceNumber": "INV-1021",
+        "vendor": "Northwind Traders",
+        "po": "PO-5021",
+        "amount": 800,
+        "due": "2026-05-12",
+        "status": "Paid"
+      },
+      {
+        "invoiceNumber": "INV-1022",
+        "vendor": "Contoso Parts",
+        "po": "PO-5022",
+        "amount": 120,
+        "due": "2026-04-01",
+        "status": "Paid"
+      },
+      {
+        "invoiceNumber": "INV-1023",
+        "vendor": "Fabrikam Supply",
+        "po": "PO-5023",
+        "amount": 640,
+        "due": "2026-09-01",
+        "status": "Paid"
+      },
+      {
+        "invoiceNumber": "INV-1024",
+        "vendor": "Adventure Works",
+        "po": "PO-5024",
+        "amount": 90,
+        "due": "2026-01-15",
+        "status": "Paid"
+      },
+      {
+        "invoiceNumber": "INV-1026",
+        "vendor": "Wide World Importers",
+        "po": "PO-5026",
+        "amount": 430,
+        "due": "2026-08-08",
+        "status": "Paid"
+      },
+      {
+        "invoiceNumber": "INV-1027",
+        "vendor": "Litware Inc",
+        "po": "PO-5027",
+        "amount": 210,
+        "due": "2026-10-01",
+        "status": "Paid"
+      },
+      {
+        "invoiceNumber": "INV-1028",
+        "vendor": "Tailspin Toys",
+        "po": "PO-5028",
+        "amount": 77,
+        "due": "2026-03-03",
+        "status": "Paid"
+      },
+      {
+        "invoiceNumber": "INV-1029",
+        "vendor": "Proseware",
+        "po": "PO-5029",
+        "amount": 1000,
+        "due": "2026-02-02",
+        "status": "Paid"
+      },
+      {
+        "invoiceNumber": "INV-1030",
+        "vendor": "Coho Winery",
+        "po": "PO-5030",
+        "amount": 333.33,
+        "due": "2026-07-07",
+        "status": "Paid"
+      },
+      {
+        "invoiceNumber": "INV-1032",
+        "vendor": "Alpine Ski House",
+        "po": "PO-5032",
+        "amount": 610,
+        "due": "2026-10-20",
+        "status": "Paid"
+      },
+      {
+        "invoiceNumber": "INV-1033",
+        "vendor": "Munson Pickles",
+        "po": "PO-5033",
+        "amount": 250,
+        "due": "2026-09-09",
+        "status": "Paid"
+      },
+      {
+        "invoiceNumber": "INV-1034",
+        "vendor": "Acme Industrial",
+        "po": "PO-5034",
+        "amount": 199,
+        "due": "2026-11-15",
+        "status": "Paid"
+      }
+    ]
+  },
+  "coldMs": 7100,
+  "warmMs": 2400
+}

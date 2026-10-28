@@ -1,0 +1,104 @@
+{
+  "recordedAt": null,
+  "pomeradoVersion": null,
+  "synthetic": true,
+  "integration": "list_vendors",
+  "input": {},
+  "arguments": {
+    "input": {}
+  },
+  "trail": [
+    "replay",
+    "hand-written fixture, not a Pomerado run"
+  ],
+  "output": {
+    "vendors": [
+      {
+        "id": "V-1001",
+        "name": "Acme Industrial",
+        "email": "ap@acme.example",
+        "category": "Hardware",
+        "terms": "Net 30"
+      },
+      {
+        "id": "V-1002",
+        "name": "Northwind Traders",
+        "email": "billing@northwind.example",
+        "category": "Office",
+        "terms": "Net 15"
+      },
+      {
+        "id": "V-1003",
+        "name": "Contoso Parts",
+        "email": "ap@contoso.example",
+        "category": "Hardware",
+        "terms": "Net 60"
+      },
+      {
+        "id": "V-1004",
+        "name": "Fabrikam Supply",
+        "email": "pay@fabrikam.example",
+        "category": "Facilities",
+        "terms": "Net 30"
+      },
+      {
+        "id": "V-1005",
+        "name": "Adventure Works",
+        "email": "ap@adventure.example",
+        "category": "Office",
+        "terms": "Net 30"
+      },
+      {
+        "id": "V-1006",
+        "name": "Wide World Importers",
+        "email": "accounts@wideworld.example",
+        "category": "Logistics",
+        "terms": "Net 15"
+      },
+      {
+        "id": "V-1007",
+        "name": "Litware Inc",
+        "email": "ap@litware.example",
+        "category": "Software",
+        "terms": "Net 60"
+      },
+      {
+        "id": "V-1008",
+        "name": "Tailspin Toys",
+        "email": "billing@tailspin.example",
+        "category": "Retail",
+        "terms": "Net 30"
+      },
+      {
+        "id": "V-1009",
+        "name": "Proseware",
+        "email": "ap@proseware.example",
+        "category": "Software",
+        "terms": "Net 15"
+      },
+      {
+        "id": "V-1010",
+        "name": "Coho Winery",
+        "email": "pay@coho.example",
+        "category": "Hospitality",
+        "terms": "Net 30"
+      },
+      {
+        "id": "V-1011",
+        "name": "Alpine Ski House",
+        "email": "ap@alpine.example",
+        "category": "Retail",
+        "terms": "Net 60"
+      },
+      {
+        "id": "V-1012",
+        "name": "Munson Pickles",
+        "email": "billing@munson.example",
+        "category": "Hospitality",
+        "terms": "Net 15"
+      }
+    ]
+  },
+  "coldMs": 4800,
+  "warmMs": 1500
+}
