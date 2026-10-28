@@ -1,5 +1,13 @@
 {
-  "proposed": [],
+  "proposed": [
+    {
+      "id": "pomerado",
+      "title": "Pomerado (YC F26, open-source: turn any website into an API/MCP tool for agents)",
+      "url": "https://x.com/i/trending/2114600496728092896",
+      "source": "trending",
+      "date": "2026-10-28"
+    }
+  ],
   "approved": [
     {
       "id": "openui-1-0",
