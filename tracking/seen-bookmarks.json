@@ -1,13 +1,5 @@
 {
-  "proposed": [
-    {
-      "id": "pomerado",
-      "title": "Pomerado (YC F26, open-source: turn any website into an API/MCP tool for agents)",
-      "url": "https://x.com/i/trending/2114600496728092896",
-      "source": "trending",
-      "date": "2026-10-28"
-    }
-  ],
+  "proposed": [],
   "approved": [
     {
       "id": "openui-1-0",
@@ -44,6 +36,15 @@
       "date": "2026-10-26",
       "approved": "2026-10-26",
       "slug": "kimi-3d-scene-builder"
+    },
+    {
+      "id": "pomerado",
+      "title": "Pomerado (YC F26, open-source: turn any website into an API/MCP tool for agents)",
+      "url": "https://x.com/i/trending/2114600496728092896",
+      "source": "trending",
+      "date": "2026-10-28",
+      "approved": "2026-10-28",
+      "slug": "pomerado-legacy-portal"
     }
   ],
   "skipped": []
