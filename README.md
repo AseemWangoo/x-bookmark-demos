@@ -17,3 +17,4 @@ bun install && bun run dev
 | Clairic Receipt Extractor | [Clairic launch, @michellechen](https://x.com/michellechen/status/2112241006104244584) | https://github.com/AseemWangoo/x-bookmark-demos/pull/2 |
 | Decisions triage | [OpenAI Decisions API](https://x.com/testingcatalog/status/2113398273352368473) | https://github.com/AseemWangoo/x-bookmark-demos/pull/4 |
 | Kimi 3D Scene Builder | [Kimi K3.1 Pro, @Smlay_ero](https://x.com/Smlay_ero/status/2113681692640915951) | https://github.com/AseemWangoo/x-bookmark-demos/pull/5 |
+| Pomerado Legacy Portal | [Pomerado (YC F26), X trending](https://x.com/i/trending/2114600496728092896) | PLACEHOLDER_PR_URL |

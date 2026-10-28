@@ -1,0 +1,50 @@
+{
+  "recordedAt": null,
+  "pomeradoVersion": null,
+  "synthetic": true,
+  "integration": "list_invoices",
+  "input": {
+    "status": "open",
+    "vendor": "Acme"
+  },
+  "arguments": {
+    "input": {
+      "status": "open",
+      "vendor": "Acme"
+    }
+  },
+  "trail": [
+    "replay",
+    "hand-written fixture, not a Pomerado run"
+  ],
+  "output": {
+    "invoices": [
+      {
+        "invoiceNumber": "INV-1002",
+        "vendor": "Acme Industrial",
+        "po": "PO-5002",
+        "amount": 2100,
+        "due": "2026-11-02",
+        "status": "Open"
+      },
+      {
+        "invoiceNumber": "INV-1006",
+        "vendor": "Acme Industrial",
+        "po": "PO-5006",
+        "amount": 875.1,
+        "due": "2026-12-01",
+        "status": "Open"
+      },
+      {
+        "invoiceNumber": "INV-1015",
+        "vendor": "Acme Industrial",
+        "po": "PO-5015",
+        "amount": 430,
+        "due": "2026-10-28",
+        "status": "Open"
+      }
+    ]
+  },
+  "coldMs": 5900,
+  "warmMs": 1800
+}
