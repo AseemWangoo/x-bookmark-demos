@@ -1,13 +1,5 @@
 {
-  "proposed": [
-    {
-      "id": "gpt-6-1-terra",
-      "title": "GPT-6.1 Terra (OpenAI mid-tier model: visual reasoning, computer use, $1/$5 per M tokens)",
-      "url": "https://x.com/i/trending/2115503723283624109",
-      "source": "trending",
-      "date": "2026-10-30"
-    }
-  ],
+  "proposed": [],
   "approved": [
     {
       "id": "openui-1-0",
@@ -53,6 +45,15 @@
       "date": "2026-10-28",
       "approved": "2026-10-28",
       "slug": "pomerado-legacy-portal"
+    },
+    {
+      "id": "gpt-6-1-terra",
+      "title": "GPT-6.1 Terra (OpenAI mid-tier model: visual reasoning, computer use, $1/$5 per M tokens)",
+      "url": "https://x.com/i/trending/2115503723283624109",
+      "source": "trending",
+      "date": "2026-10-30",
+      "approved": "2026-10-30",
+      "slug": "terra-drawing-to-form"
     }
   ],
   "skipped": []
