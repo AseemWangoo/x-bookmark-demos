@@ -1,0 +1,23 @@
+{
+  "synthetic": true,
+  "model": "gpt-6.1-terra",
+  "latencyMs": 1280,
+  "usage": { "inputTokens": 1840, "outputTokens": 612, "costUsd": 0.0049 },
+  "results": [
+    { "key": "part_no", "value": "NF-1042-B", "confidence": 0.99, "bbox": { "x": 0.7393, "y": 0.7667, "w": 0.1071, "h": 0.0333 } },
+    { "key": "title", "value": "L-BRAKET", "confidence": 0.54, "bbox": { "x": 0.7393, "y": 0.8311, "w": 0.1571, "h": 0.0333 }, "note": "letter boundary is faint" },
+    { "key": "material", "value": "AL 6061", "confidence": 0.97, "bbox": { "x": 0.7393, "y": 0.8956, "w": 0.0786, "h": 0.0289 } },
+    { "key": "finish", "value": "ANODIZE", "confidence": 0.94, "bbox": { "x": 0.8571, "y": 0.8956, "w": 0.0857, "h": 0.0289 } },
+    { "key": "scale", "value": "1:2", "confidence": 0.98, "bbox": { "x": 0.7393, "y": 0.9444, "w": 0.0371, "h": 0.0267 } },
+    { "key": "drawn_by", "value": "M. K.", "confidence": 0.88, "bbox": { "x": 0.8071, "y": 0.9444, "w": 0.0393, "h": 0.0267 } },
+    { "key": "date", "value": "2026-10-14", "confidence": 0.98, "bbox": { "x": 0.8607, "y": 0.9444, "w": 0.075, "h": 0.0267 } },
+    { "key": "revision", "value": "C", "confidence": 0.97, "bbox": { "x": 0.9414, "y": 0.7667, "w": 0.0229, "h": 0.0333 } },
+    { "key": "sheet", "value": "1/1", "confidence": 0.96, "bbox": { "x": 0.9414, "y": 0.8311, "w": 0.0271, "h": 0.0333 } },
+    { "key": "overall_length", "value": 620, "confidence": 0.99, "bbox": { "x": 0.3129, "y": 0.7778, "w": 0.06, "h": 0.0378 } },
+    { "key": "overall_height", "value": 360, "confidence": 0.96, "bbox": { "x": 0.06, "y": 0.4067, "w": 0.0529, "h": 0.0378 } },
+    { "key": "thickness", "value": 12, "confidence": 0.91, "bbox": { "x": 0.6536, "y": 0.5956, "w": 0.0393, "h": 0.0356 } },
+    { "key": "hole_diameter", "value": 68, "confidence": 0.98, "bbox": { "x": 0.3086, "y": 0.3556, "w": 0.0629, "h": 0.0378 } },
+    { "key": "hole_count", "value": 2, "confidence": 0.89, "bbox": { "x": 0.3014, "y": 0.3089, "w": 0.02, "h": 0.0311 } },
+    { "key": "general_tolerance", "value": "±0.20", "confidence": 0.82, "bbox": { "x": 0.5571, "y": 0.9422, "w": 0.0736, "h": 0.0267 } }
+  ]
+}

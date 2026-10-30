@@ -1,0 +1,18 @@
+{
+  "synthetic": true,
+  "model": "gpt-6.1-terra",
+  "latencyMs": 1180,
+  "usage": { "inputTokens": 1985, "outputTokens": 406, "costUsd": 0.004 },
+  "results": [
+    { "key": "model", "value": "ARX-180M-4", "confidence": 0.99, "bbox": { "x": 0.6327, "y": 0.245, "w": 0.1864, "h": 0.0243 } },
+    { "key": "rated_power", "value": 18.5, "confidence": 0.98, "bbox": { "x": 0.6327, "y": 0.3029, "w": 0.0909, "h": 0.0243 } },
+    { "key": "voltage", "value": 400, "confidence": 0.99, "bbox": { "x": 0.6327, "y": 0.3607, "w": 0.0727, "h": 0.0243 } },
+    { "key": "current", "value": 34.8, "confidence": 0.97, "bbox": { "x": 0.6327, "y": 0.4186, "w": 0.0818, "h": 0.0243 } },
+    { "key": "speed", "value": 1475, "confidence": 0.98, "bbox": { "x": 0.6327, "y": 0.4764, "w": 0.0909, "h": 0.0243 } },
+    { "key": "frequency", "value": 50, "confidence": 0.98, "bbox": { "x": 0.6327, "y": 0.5343, "w": 0.0727, "h": 0.0243 } },
+    { "key": "ip_rating", "value": "IP54", "confidence": 0.52, "bbox": { "x": 0.6327, "y": 0.5921, "w": 0.0636, "h": 0.0243 }, "note": "last digit is ambiguous" },
+    { "key": "insulation_class", "value": "F", "confidence": 0.95, "bbox": { "x": 0.6327, "y": 0.65, "w": 0.0318, "h": 0.0243 } },
+    { "key": "efficiency", "value": 92.6, "confidence": 0.96, "bbox": { "x": 0.6327, "y": 0.7079, "w": 0.0818, "h": 0.0243 } },
+    { "key": "weight", "value": 138, "confidence": 0.97, "bbox": { "x": 0.6327, "y": 0.7657, "w": 0.0818, "h": 0.0243 } }
+  ]
+}

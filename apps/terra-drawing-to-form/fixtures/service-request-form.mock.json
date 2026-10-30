@@ -1,0 +1,20 @@
+{
+  "synthetic": true,
+  "model": "gpt-6.1-terra",
+  "latencyMs": 1420,
+  "usage": { "inputTokens": 2210, "outputTokens": 488, "costUsd": 0.0047 },
+  "results": [
+    { "key": "request_id", "value": "SR-2684", "confidence": 0.98, "bbox": { "x": 0.72, "y": 0.0829, "w": 0.1636, "h": 0.0243 } },
+    { "key": "request_date", "value": "2026-10-30", "confidence": 0.95, "bbox": { "x": 0.7182, "y": 0.1271, "w": 0.1636, "h": 0.0243 } },
+    { "key": "requester", "value": "Jamie Rivers", "confidence": 0.91, "bbox": { "x": 0.2227, "y": 0.2143, "w": 0.2, "h": 0.0286 } },
+    { "key": "department", "value": "Packaging", "confidence": 0.93, "bbox": { "x": 0.6409, "y": 0.2143, "w": 0.1636, "h": 0.0286 } },
+    { "key": "equipment_id", "value": "PKG-CV-07", "confidence": 0.96, "bbox": { "x": 0.2227, "y": 0.2843, "w": 0.1727, "h": 0.0286 } },
+    { "key": "equipment_type", "value": "Conveyor", "confidence": 0.94, "bbox": { "x": 0.6409, "y": 0.2843, "w": 0.1636, "h": 0.0286 } },
+    { "key": "priority", "value": "Urgent", "confidence": 0.88, "bbox": { "x": 0.1455, "y": 0.3857, "w": 0.2273, "h": 0.0271 } },
+    { "key": "out_of_service", "value": true, "confidence": 0.9, "bbox": { "x": 0.6491, "y": 0.3857, "w": 0.0327, "h": 0.0257 } },
+    { "key": "issue", "value": "Drive motor intermittently stalls under load. Noise near gearbox after restart.", "confidence": 0.87, "bbox": { "x": 0.0955, "y": 0.5129, "w": 0.7455, "h": 0.0629 } },
+    { "key": "location", "value": "Line 2 · Bay C", "confidence": 0.92, "bbox": { "x": 0.2227, "y": 0.6321, "w": 0.2636, "h": 0.0286 } },
+    { "key": "contact_phone", "value": null, "confidence": 0.22, "bbox": null, "note": "smudged and illegible" },
+    { "key": "signature", "value": "J. Rivers", "confidence": 0.66, "bbox": { "x": 0.2255, "y": 0.775, "w": 0.2364, "h": 0.0343 }, "note": "stylized signature" }
+  ]
+}
