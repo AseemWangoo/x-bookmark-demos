@@ -1,5 +1,13 @@
 {
-  "proposed": [],
+  "proposed": [
+    {
+      "id": "vercel-agent-desktop",
+      "title": "agent-desktop (Vercel Labs: computer use for any coding agent via OS accessibility tree)",
+      "url": "https://x.com/ctatedev/status/2116323148706771302",
+      "source": "trending",
+      "date": "2026-11-02"
+    }
+  ],
   "approved": [
     {
       "id": "openui-1-0",
