@@ -1,0 +1,23 @@
+{
+  "version": "2.5",
+  "ok": true,
+  "command": "list-apps",
+  "data": {
+    "apps": [
+      {
+        "bundle_id": "xdg-desktop-portal-gtk",
+        "name": "xdg-desktop-portal-gtk",
+        "pid": 8001,
+        "presentation": "background",
+        "process_instance": "2e30dd6e:91551"
+      },
+      {
+        "bundle_id": "org.gnome.Calculator",
+        "name": "gnome-calculator",
+        "pid": 8178,
+        "presentation": "foreground",
+        "process_instance": "2e30dd6e:91802"
+      }
+    ]
+  }
+}
