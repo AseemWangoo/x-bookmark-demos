@@ -1,0 +1,9 @@
+{
+  "synthetic": false,
+  "version": "1.0.1",
+  "recordedAt": "2026-11-02T05:41:13.104Z",
+  "envelopeVersion": "2.5",
+  "os": "Ubuntu 24.04.5 LTS",
+  "scenario": "append",
+  "ok": true
+}

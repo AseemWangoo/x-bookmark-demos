@@ -1,0 +1,292 @@
+{
+  "version": "2.5",
+  "ok": true,
+  "command": "snapshot",
+  "data": {
+    "app": "gnome-text-editor",
+    "complete": true,
+    "ref_count": 12,
+    "snapshot_id": "s2ij3m1mfd2pca",
+    "tree": {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [
+                                                            {
+                                                              "available_actions": [
+                                                                "SetFocus",
+                                                                "Scroll"
+                                                              ],
+                                                              "children": [
+                                                                {
+                                                                  "available_actions": [
+                                                                    "RightClick",
+                                                                    "SetValue",
+                                                                    "TypeText",
+                                                                    "SetFocus"
+                                                                  ],
+                                                                  "ref_id": "@s2ij3m1mfd2pca:e2",
+                                                                  "role": "textfield",
+                                                                  "states": [
+                                                                    "focused",
+                                                                    "haspopup"
+                                                                  ],
+                                                                  "value": "To-do:\n- Plan\n- Build\n- Record demo"
+                                                                }
+                                                              ],
+                                                              "ref_id": "@s2ij3m1mfd2pca:e1",
+                                                              "role": "scrollarea"
+                                                            }
+                                                          ],
+                                                          "role": "group"
+                                                        }
+                                                      ],
+                                                      "role": "group"
+                                                    }
+                                                  ],
+                                                  "role": "group"
+                                                }
+                                              ],
+                                              "role": "group"
+                                            }
+                                          ],
+                                          "role": "group"
+                                        }
+                                      ],
+                                      "name": "To do Plan Build Record",
+                                      "role": "group"
+                                    }
+                                  ],
+                                  "role": "group"
+                                }
+                              ],
+                              "role": "group"
+                            }
+                          ],
+                          "role": "group"
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [
+                                                            {
+                                                              "available_actions": [
+                                                                "Expand",
+                                                                "Collapse"
+                                                              ],
+                                                              "children": [
+                                                                {
+                                                                  "available_actions": [
+                                                                    "Click",
+                                                                    "SetFocus"
+                                                                  ],
+                                                                  "description": "Recently Used Documents",
+                                                                  "name": "Open",
+                                                                  "ref_id": "@s2ij3m1mfd2pca:e4",
+                                                                  "role": "switch"
+                                                                }
+                                                              ],
+                                                              "description": "Recently Used Documents",
+                                                              "name": "Open",
+                                                              "ref_id": "@s2ij3m1mfd2pca:e3",
+                                                              "role": "menubutton",
+                                                              "states": [
+                                                                "haspopup"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "available_actions": [
+                                                                "Click",
+                                                                "SetFocus"
+                                                              ],
+                                                              "description": "New Tab",
+                                                              "name": "New tab",
+                                                              "ref_id": "@s2ij3m1mfd2pca:e5",
+                                                              "role": "button"
+                                                            }
+                                                          ],
+                                                          "role": "group"
+                                                        }
+                                                      ],
+                                                      "role": "group"
+                                                    }
+                                                  ],
+                                                  "role": "group"
+                                                },
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [
+                                                            {
+                                                              "available_actions": [
+                                                                "Expand",
+                                                                "Collapse"
+                                                              ],
+                                                              "children": [
+                                                                {
+                                                                  "available_actions": [
+                                                                    "Click",
+                                                                    "SetFocus"
+                                                                  ],
+                                                                  "description": "View Options",
+                                                                  "name": "View",
+                                                                  "ref_id": "@s2ij3m1mfd2pca:e7",
+                                                                  "role": "switch"
+                                                                }
+                                                              ],
+                                                              "description": "View Options",
+                                                              "name": "View",
+                                                              "ref_id": "@s2ij3m1mfd2pca:e6",
+                                                              "role": "menubutton",
+                                                              "states": [
+                                                                "haspopup"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "available_actions": [
+                                                                "Expand",
+                                                                "Collapse"
+                                                              ],
+                                                              "children": [
+                                                                {
+                                                                  "available_actions": [
+                                                                    "Click",
+                                                                    "SetFocus"
+                                                                  ],
+                                                                  "description": "Main Menu",
+                                                                  "name": "Main menu",
+                                                                  "ref_id": "@s2ij3m1mfd2pca:e9",
+                                                                  "role": "switch"
+                                                                }
+                                                              ],
+                                                              "description": "Main Menu",
+                                                              "name": "Main menu",
+                                                              "ref_id": "@s2ij3m1mfd2pca:e8",
+                                                              "role": "menubutton",
+                                                              "states": [
+                                                                "haspopup"
+                                                              ]
+                                                            }
+                                                          ],
+                                                          "role": "group"
+                                                        },
+                                                        {
+                                                          "children": [
+                                                            {
+                                                              "available_actions": [
+                                                                "Click",
+                                                                "SetFocus"
+                                                              ],
+                                                              "description": "Minimize the window",
+                                                              "name": "Minimize",
+                                                              "ref_id": "@s2ij3m1mfd2pca:e10",
+                                                              "role": "button"
+                                                            },
+                                                            {
+                                                              "available_actions": [
+                                                                "Click",
+                                                                "SetFocus"
+                                                              ],
+                                                              "description": "Maximize the window",
+                                                              "name": "Maximize",
+                                                              "ref_id": "@s2ij3m1mfd2pca:e11",
+                                                              "role": "button"
+                                                            },
+                                                            {
+                                                              "available_actions": [
+                                                                "Click",
+                                                                "SetFocus"
+                                                              ],
+                                                              "description": "Close the window",
+                                                              "name": "Close",
+                                                              "ref_id": "@s2ij3m1mfd2pca:e12",
+                                                              "role": "button"
+                                                            }
+                                                          ],
+                                                          "role": "group"
+                                                        }
+                                                      ],
+                                                      "role": "group"
+                                                    }
+                                                  ],
+                                                  "role": "group"
+                                                }
+                                              ],
+                                              "role": "group"
+                                            }
+                                          ],
+                                          "role": "group"
+                                        }
+                                      ],
+                                      "role": "group"
+                                    }
+                                  ],
+                                  "role": "group"
+                                }
+                              ],
+                              "role": "group"
+                            }
+                          ],
+                          "role": "group"
+                        }
+                      ],
+                      "role": "group"
+                    }
+                  ],
+                  "role": "group"
+                }
+              ],
+              "role": "group"
+            }
+          ],
+          "role": "group"
+        }
+      ],
+      "name": "To do Plan Build Record (Draft) - Text Editor",
+      "role": "window"
+    },
+    "window": {
+      "id": "w-1.6-org-gnome-TextEditor-a11y-179c0404_263c_441f_97a7_41978cce224f",
+      "title": "To do Plan Build Record (Draft) - Text Editor"
+    }
+  }
+}

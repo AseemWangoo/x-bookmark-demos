@@ -1,0 +1,291 @@
+{
+  "version": "2.5",
+  "ok": true,
+  "command": "snapshot",
+  "data": {
+    "app": "gnome-text-editor",
+    "complete": true,
+    "ref_count": 12,
+    "snapshot_id": "sf8gs8qxfn3m6",
+    "tree": {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [
+                                                            {
+                                                              "available_actions": [
+                                                                "SetFocus",
+                                                                "Scroll"
+                                                              ],
+                                                              "children": [
+                                                                {
+                                                                  "available_actions": [
+                                                                    "RightClick",
+                                                                    "SetValue",
+                                                                    "TypeText",
+                                                                    "SetFocus"
+                                                                  ],
+                                                                  "ref_id": "@sf8gs8qxfn3m6:e2",
+                                                                  "role": "textfield",
+                                                                  "states": [
+                                                                    "focused",
+                                                                    "haspopup"
+                                                                  ]
+                                                                }
+                                                              ],
+                                                              "ref_id": "@sf8gs8qxfn3m6:e1",
+                                                              "role": "scrollarea"
+                                                            }
+                                                          ],
+                                                          "role": "group"
+                                                        }
+                                                      ],
+                                                      "role": "group"
+                                                    }
+                                                  ],
+                                                  "role": "group"
+                                                }
+                                              ],
+                                              "role": "group"
+                                            }
+                                          ],
+                                          "role": "group"
+                                        }
+                                      ],
+                                      "name": "New Document",
+                                      "role": "group"
+                                    }
+                                  ],
+                                  "role": "group"
+                                }
+                              ],
+                              "role": "group"
+                            }
+                          ],
+                          "role": "group"
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [
+                                                            {
+                                                              "available_actions": [
+                                                                "Expand",
+                                                                "Collapse"
+                                                              ],
+                                                              "children": [
+                                                                {
+                                                                  "available_actions": [
+                                                                    "Click",
+                                                                    "SetFocus"
+                                                                  ],
+                                                                  "description": "Recently Used Documents",
+                                                                  "name": "Open",
+                                                                  "ref_id": "@sf8gs8qxfn3m6:e4",
+                                                                  "role": "switch"
+                                                                }
+                                                              ],
+                                                              "description": "Recently Used Documents",
+                                                              "name": "Open",
+                                                              "ref_id": "@sf8gs8qxfn3m6:e3",
+                                                              "role": "menubutton",
+                                                              "states": [
+                                                                "haspopup"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "available_actions": [
+                                                                "Click",
+                                                                "SetFocus"
+                                                              ],
+                                                              "description": "New Tab",
+                                                              "name": "New tab",
+                                                              "ref_id": "@sf8gs8qxfn3m6:e5",
+                                                              "role": "button"
+                                                            }
+                                                          ],
+                                                          "role": "group"
+                                                        }
+                                                      ],
+                                                      "role": "group"
+                                                    }
+                                                  ],
+                                                  "role": "group"
+                                                },
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [
+                                                            {
+                                                              "available_actions": [
+                                                                "Expand",
+                                                                "Collapse"
+                                                              ],
+                                                              "children": [
+                                                                {
+                                                                  "available_actions": [
+                                                                    "Click",
+                                                                    "SetFocus"
+                                                                  ],
+                                                                  "description": "View Options",
+                                                                  "name": "View",
+                                                                  "ref_id": "@sf8gs8qxfn3m6:e7",
+                                                                  "role": "switch"
+                                                                }
+                                                              ],
+                                                              "description": "View Options",
+                                                              "name": "View",
+                                                              "ref_id": "@sf8gs8qxfn3m6:e6",
+                                                              "role": "menubutton",
+                                                              "states": [
+                                                                "haspopup"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "available_actions": [
+                                                                "Expand",
+                                                                "Collapse"
+                                                              ],
+                                                              "children": [
+                                                                {
+                                                                  "available_actions": [
+                                                                    "Click",
+                                                                    "SetFocus"
+                                                                  ],
+                                                                  "description": "Main Menu",
+                                                                  "name": "Main menu",
+                                                                  "ref_id": "@sf8gs8qxfn3m6:e9",
+                                                                  "role": "switch"
+                                                                }
+                                                              ],
+                                                              "description": "Main Menu",
+                                                              "name": "Main menu",
+                                                              "ref_id": "@sf8gs8qxfn3m6:e8",
+                                                              "role": "menubutton",
+                                                              "states": [
+                                                                "haspopup"
+                                                              ]
+                                                            }
+                                                          ],
+                                                          "role": "group"
+                                                        },
+                                                        {
+                                                          "children": [
+                                                            {
+                                                              "available_actions": [
+                                                                "Click",
+                                                                "SetFocus"
+                                                              ],
+                                                              "description": "Minimize the window",
+                                                              "name": "Minimize",
+                                                              "ref_id": "@sf8gs8qxfn3m6:e10",
+                                                              "role": "button"
+                                                            },
+                                                            {
+                                                              "available_actions": [
+                                                                "Click",
+                                                                "SetFocus"
+                                                              ],
+                                                              "description": "Maximize the window",
+                                                              "name": "Maximize",
+                                                              "ref_id": "@sf8gs8qxfn3m6:e11",
+                                                              "role": "button"
+                                                            },
+                                                            {
+                                                              "available_actions": [
+                                                                "Click",
+                                                                "SetFocus"
+                                                              ],
+                                                              "description": "Close the window",
+                                                              "name": "Close",
+                                                              "ref_id": "@sf8gs8qxfn3m6:e12",
+                                                              "role": "button"
+                                                            }
+                                                          ],
+                                                          "role": "group"
+                                                        }
+                                                      ],
+                                                      "role": "group"
+                                                    }
+                                                  ],
+                                                  "role": "group"
+                                                }
+                                              ],
+                                              "role": "group"
+                                            }
+                                          ],
+                                          "role": "group"
+                                        }
+                                      ],
+                                      "role": "group"
+                                    }
+                                  ],
+                                  "role": "group"
+                                }
+                              ],
+                              "role": "group"
+                            }
+                          ],
+                          "role": "group"
+                        }
+                      ],
+                      "role": "group"
+                    }
+                  ],
+                  "role": "group"
+                }
+              ],
+              "role": "group"
+            }
+          ],
+          "role": "group"
+        }
+      ],
+      "name": "New Document (Draft) - Text Editor",
+      "role": "window"
+    },
+    "window": {
+      "id": "w-1.6-org-gnome-TextEditor-a11y-179c0404_263c_441f_97a7_41978cce224f",
+      "title": "New Document (Draft) - Text Editor"
+    }
+  }
+}

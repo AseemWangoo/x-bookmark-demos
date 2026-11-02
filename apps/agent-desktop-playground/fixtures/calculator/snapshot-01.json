@@ -1,0 +1,516 @@
+{
+  "version": "2.5",
+  "ok": true,
+  "command": "snapshot",
+  "data": {
+    "app": "gnome-calculator",
+    "complete": true,
+    "ref_count": 37,
+    "snapshot_id": "ssoufcteh6u3v",
+    "tree": {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "available_actions": [
+                                            "SetFocus",
+                                            "Scroll"
+                                          ],
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "available_actions": [
+                                                    "Select",
+                                                    "SetFocus",
+                                                    "Scroll"
+                                                  ],
+                                                  "children": [
+                                                    {
+                                                      "available_actions": [
+                                                        "Select",
+                                                        "SetFocus"
+                                                      ],
+                                                      "ref_id": "@ssoufcteh6u3v:e3",
+                                                      "role": "option"
+                                                    }
+                                                  ],
+                                                  "ref_id": "@ssoufcteh6u3v:e2",
+                                                  "role": "listbox"
+                                                }
+                                              ],
+                                              "role": "group"
+                                            }
+                                          ],
+                                          "ref_id": "@ssoufcteh6u3v:e1",
+                                          "role": "scrollarea"
+                                        }
+                                      ],
+                                      "role": "group"
+                                    },
+                                    {
+                                      "children": [
+                                        {
+                                          "available_actions": [
+                                            "SetFocus",
+                                            "Scroll"
+                                          ],
+                                          "children": [
+                                            {
+                                              "available_actions": [
+                                                "RightClick",
+                                                "SetValue",
+                                                "TypeText",
+                                                "SetFocus"
+                                              ],
+                                              "ref_id": "@ssoufcteh6u3v:e5",
+                                              "role": "textfield",
+                                              "states": [
+                                                "focused",
+                                                "haspopup"
+                                              ],
+                                              "value": "84"
+                                            }
+                                          ],
+                                          "ref_id": "@ssoufcteh6u3v:e4",
+                                          "role": "scrollarea"
+                                        }
+                                      ],
+                                      "role": "group"
+                                    }
+                                  ],
+                                  "role": "group"
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "name": "4",
+                                              "ref_id": "@ssoufcteh6u3v:e6",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "name": "7",
+                                              "ref_id": "@ssoufcteh6u3v:e7",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "name": "8",
+                                              "ref_id": "@ssoufcteh6u3v:e8",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "name": "9",
+                                              "ref_id": "@ssoufcteh6u3v:e9",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "name": "5",
+                                              "ref_id": "@ssoufcteh6u3v:e10",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "name": "6",
+                                              "ref_id": "@ssoufcteh6u3v:e11",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "description": "Modulus Divide",
+                                              "name": "mod",
+                                              "ref_id": "@ssoufcteh6u3v:e12",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "description": "Divide [/]",
+                                              "name": "÷",
+                                              "ref_id": "@ssoufcteh6u3v:e13",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "name": "1",
+                                              "ref_id": "@ssoufcteh6u3v:e14",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "name": "2",
+                                              "ref_id": "@ssoufcteh6u3v:e15",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "name": "0",
+                                              "ref_id": "@ssoufcteh6u3v:e16",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "name": ".",
+                                              "ref_id": "@ssoufcteh6u3v:e17",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "name": "3",
+                                              "ref_id": "@ssoufcteh6u3v:e18",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "description": "Multiply [*]",
+                                              "name": "×",
+                                              "ref_id": "@ssoufcteh6u3v:e19",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "description": "Subtract [-]",
+                                              "name": "−",
+                                              "ref_id": "@ssoufcteh6u3v:e20",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "description": "Add [+]",
+                                              "name": "+",
+                                              "ref_id": "@ssoufcteh6u3v:e21",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "description": "Pi [Ctrl+P]",
+                                              "name": "π",
+                                              "ref_id": "@ssoufcteh6u3v:e22",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "description": "Root [Ctrl+R]",
+                                              "name": "√",
+                                              "ref_id": "@ssoufcteh6u3v:e23",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "description": "Square [Ctrl+2]",
+                                              "name": "x2",
+                                              "ref_id": "@ssoufcteh6u3v:e24",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "description": "Clear Display [Escape]",
+                                              "name": "C",
+                                              "ref_id": "@ssoufcteh6u3v:e25",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "description": "Start Group [(]",
+                                              "name": "(",
+                                              "ref_id": "@ssoufcteh6u3v:e26",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "description": "End Group [)]",
+                                              "name": ")",
+                                              "ref_id": "@ssoufcteh6u3v:e27",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "description": "Percentage [%]",
+                                              "name": "%",
+                                              "ref_id": "@ssoufcteh6u3v:e28",
+                                              "role": "button"
+                                            },
+                                            {
+                                              "available_actions": [
+                                                "Click",
+                                                "SetFocus"
+                                              ],
+                                              "description": "Calculate Result",
+                                              "name": "=",
+                                              "ref_id": "@ssoufcteh6u3v:e29",
+                                              "role": "button"
+                                            }
+                                          ],
+                                          "role": "group"
+                                        }
+                                      ],
+                                      "role": "group"
+                                    }
+                                  ],
+                                  "role": "group"
+                                }
+                              ],
+                              "role": "group"
+                            }
+                          ],
+                          "role": "group"
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "available_actions": [
+                                                            "Click",
+                                                            "SetFocus"
+                                                          ],
+                                                          "name": "Undo",
+                                                          "ref_id": "@ssoufcteh6u3v:e30",
+                                                          "role": "button"
+                                                        }
+                                                      ],
+                                                      "role": "group"
+                                                    }
+                                                  ],
+                                                  "role": "group"
+                                                },
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "available_actions": [
+                                                        "Expand",
+                                                        "Collapse"
+                                                      ],
+                                                      "children": [
+                                                        {
+                                                          "available_actions": [
+                                                            "Click",
+                                                            "SetFocus"
+                                                          ],
+                                                          "description": "Mode Selection",
+                                                          "name": "Basic",
+                                                          "ref_id": "@ssoufcteh6u3v:e32",
+                                                          "role": "switch"
+                                                        }
+                                                      ],
+                                                      "description": "Mode Selection",
+                                                      "name": "Basic",
+                                                      "ref_id": "@ssoufcteh6u3v:e31",
+                                                      "role": "menubutton",
+                                                      "states": [
+                                                        "haspopup"
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "role": "group"
+                                                },
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "available_actions": [
+                                                            "Expand",
+                                                            "Collapse"
+                                                          ],
+                                                          "children": [
+                                                            {
+                                                              "available_actions": [
+                                                                "Click",
+                                                                "SetFocus"
+                                                              ],
+                                                              "name": "Main Menu",
+                                                              "ref_id": "@ssoufcteh6u3v:e34",
+                                                              "role": "switch"
+                                                            }
+                                                          ],
+                                                          "name": "Main Menu",
+                                                          "ref_id": "@ssoufcteh6u3v:e33",
+                                                          "role": "menubutton",
+                                                          "states": [
+                                                            "haspopup"
+                                                          ]
+                                                        },
+                                                        {
+                                                          "children": [
+                                                            {
+                                                              "available_actions": [
+                                                                "Click",
+                                                                "SetFocus"
+                                                              ],
+                                                              "description": "Minimize the window",
+                                                              "name": "Minimize",
+                                                              "ref_id": "@ssoufcteh6u3v:e35",
+                                                              "role": "button"
+                                                            },
+                                                            {
+                                                              "available_actions": [
+                                                                "Click",
+                                                                "SetFocus"
+                                                              ],
+                                                              "description": "Maximize the window",
+                                                              "name": "Maximize",
+                                                              "ref_id": "@ssoufcteh6u3v:e36",
+                                                              "role": "button"
+                                                            },
+                                                            {
+                                                              "available_actions": [
+                                                                "Click",
+                                                                "SetFocus"
+                                                              ],
+                                                              "description": "Close the window",
+                                                              "name": "Close",
+                                                              "ref_id": "@ssoufcteh6u3v:e37",
+                                                              "role": "button"
+                                                            }
+                                                          ],
+                                                          "role": "group"
+                                                        }
+                                                      ],
+                                                      "role": "group"
+                                                    }
+                                                  ],
+                                                  "role": "group"
+                                                }
+                                              ],
+                                              "role": "group"
+                                            }
+                                          ],
+                                          "role": "group"
+                                        }
+                                      ],
+                                      "role": "group"
+                                    }
+                                  ],
+                                  "role": "group"
+                                }
+                              ],
+                              "role": "group"
+                            }
+                          ],
+                          "role": "group"
+                        }
+                      ],
+                      "role": "group"
+                    }
+                  ],
+                  "role": "group"
+                }
+              ],
+              "role": "group"
+            }
+          ],
+          "role": "group"
+        }
+      ],
+      "name": "Calculator",
+      "role": "window"
+    },
+    "window": {
+      "id": "w-1.17-org-gnome-Calculator-a11y-d63f8711_c76f_4521_8264_4fd2a6faf5ae",
+      "title": "Calculator"
+    }
+  }
+}

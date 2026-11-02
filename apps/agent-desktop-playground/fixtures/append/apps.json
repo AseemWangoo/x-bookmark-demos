@@ -1,0 +1,23 @@
+{
+  "version": "2.5",
+  "ok": true,
+  "command": "list-apps",
+  "data": {
+    "apps": [
+      {
+        "bundle_id": "xdg-desktop-portal-gtk",
+        "name": "xdg-desktop-portal-gtk",
+        "pid": 8001,
+        "presentation": "background",
+        "process_instance": "2e30dd6e:91551"
+      },
+      {
+        "bundle_id": "org.gnome.TextEditor",
+        "name": "gnome-text-editor",
+        "pid": 8477,
+        "presentation": "foreground",
+        "process_instance": "2e30dd6e:92209"
+      }
+    ]
+  }
+}
