@@ -1,5 +1,13 @@
 {
-  "proposed": [],
+  "proposed": [
+    {
+      "id": "sarvam-prism",
+      "title": "Sarvam Prism (Sarvam AI System One decision model, 44ms, open weights + API)",
+      "url": "https://x.com/SarvamAI/status/2117621415520448838",
+      "source": "trending",
+      "date": "2026-11-04"
+    }
+  ],
   "approved": [
     {
       "id": "openui-1-0",
