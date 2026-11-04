@@ -20,3 +20,4 @@ bun install && bun run dev
 | Pomerado Legacy Portal | [Pomerado (YC F26), X trending](https://x.com/i/trending/2114600496728092896) | https://github.com/AseemWangoo/x-bookmark-demos/pull/6 |
 | Terra Drawing-to-Form | [GPT-6.1 Terra, X trending](https://x.com/i/trending/2115503723283624109) | https://github.com/AseemWangoo/x-bookmark-demos/pull/7 |
 | Agent Desktop Playground | [agent-desktop, @ctatedev](https://x.com/ctatedev/status/2116323148706771302) | https://github.com/AseemWangoo/x-bookmark-demos/pull/8 |
+| Sarvam Prism Desk | [Sarvam Prism, @SarvamAI](https://x.com/SarvamAI/status/2117621415520448838) | https://github.com/AseemWangoo/x-bookmark-demos/pull/9 |
