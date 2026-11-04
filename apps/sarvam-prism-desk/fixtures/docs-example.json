@@ -1,0 +1,20 @@
+{
+  "model": "sarvam-prism",
+  "answers": {
+    "urgent": { "type": "noul", "noul": 0.9782 },
+    "department": {
+      "type": "choice",
+      "choice": "billing",
+      "confidence": 0.7065,
+      "probabilities": { "billing": 0.8044, "technical": 0.1869, "sales": 0.0087 }
+    },
+    "severity": {
+      "type": "score",
+      "score": 3.832,
+      "confidence": 0.916,
+      "legend": { "0": "trivial", "1": "minor", "2": "moderate", "3": "major", "4": "critical" },
+      "probabilities": { "0": 0.0026, "1": 0.0034, "2": 0.0115, "3": 0.1245, "4": 0.8581 }
+    }
+  },
+  "usage": { "input_tokens": 153, "output_tokens": 0 }
+}
