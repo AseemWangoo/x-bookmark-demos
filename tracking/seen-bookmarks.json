@@ -1,5 +1,13 @@
 {
-  "proposed": [],
+  "proposed": [
+    {
+      "id": "langchain-async-subagents",
+      "title": "LangChain Async Subagents (Managed Deep Agents / deepagents: background workers while orchestrator stays responsive)",
+      "url": "https://x.com/LangChain/status/2118438264009114101",
+      "source": "trending",
+      "date": "2026-11-06"
+    }
+  ],
   "approved": [
     {
       "id": "openui-1-0",
