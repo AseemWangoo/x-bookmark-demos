@@ -1,0 +1,8 @@
+{
+  "node_version": "22",
+  "graphs": {
+    "agent": "./graphs/supervisor.ts:graph",
+    "researcher": "./graphs/researcher.ts:graph",
+    "coder": "./graphs/coder.ts:graph"
+  }
+}

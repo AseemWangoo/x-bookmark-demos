@@ -91,3 +91,14 @@ Managed Deep Agents on LangSmith, webhooks/notifications, fork mode, real search
 
 ## Post notes
 Honest framing: built on LangChain Deep Agents async subagents; video uses simulated runs if no model key/Agent Server was available. Tag verified `@LangChain`; other handles only after verification, max 3.
+
+## Implementation notes (2026-11-06)
+
+Verified while building. These correct the plan where the install or the JS CLI differed from the snippet.
+
+- Bun 1.4.4 did **not** hard-fail the `langsmith` peer clash. Top-level pin stayed `langsmith@0.11.7` (`langchain@1.6.0` wants `>=0.11`). `deepagents@1.16.2` still declares `langsmith >=0.7.1 <0.10`. `@langchain/langgraph-cli@1.5.7` nested its own `langsmith@0.10.13`. `bunfig.toml` `minimumReleaseAge` was not weakened or bypassed.
+- `shadcn init` preset name on this CLI is `nova` (not `base-nova`). `components.json` still records `"style": "base-nova"`.
+- The JS binary is `langgraphjs`. `langgraphjs dev --n-jobs-per-worker` defaults to 10; the `agent-server` script passes 10 anyway. Config file is `langgraph.ts.json` with graph ids `agent`, `researcher`, `coder`.
+- Exported graphs call `createDeepAgent` and omit `checkpointer`. The Agent Server injects persistence; a local checkpointer would fight that. The snippet above includes `checkpointer` only as the API shape.
+- Live card buttons call the LangGraph SDK (`runs.get`, `runs.create` with `multitaskStrategy: "interrupt"`, `runs.cancel`). Chat streams the supervisor so the five tool names show up when the model calls them. The desk does not pretend a synchronous `task` subagent is async.
+- Provider packages are optional peers and are not installed. A live model call needs `@langchain/anthropic`, `@langchain/openai`, or the Google package that matches `DEEP_AGENT_MODEL`. Graph modules import and typecheck without a key.
