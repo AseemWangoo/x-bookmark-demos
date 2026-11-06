@@ -80,6 +80,15 @@
       "date": "2026-11-04",
       "approved": "2026-11-04",
       "slug": "sarvam-prism-desk"
+    },
+    {
+      "id": "langchain-async-subagents",
+      "title": "LangChain Async Subagents (Deep Agents background subagents while the lead agent keeps chatting)",
+      "url": "https://x.com/LangChain/status/2118438264009114101",
+      "source": "trending",
+      "date": "2026-11-06",
+      "approved": "2026-11-06",
+      "slug": "async-subagent-desk"
     }
   ],
   "skipped": []
