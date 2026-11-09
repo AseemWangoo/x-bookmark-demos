@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{PROMPT}}</title>
+    <style>
+      body {
+        margin: 16px;
+        font-family: Georgia, "Times New Roman", serif;
+        color: #222;
+        background: #fff;
+      }
+      button {
+        font: inherit;
+      }
+      .sketch img {
+        max-width: 160px;
+        display: block;
+      }
+      .note {
+        color: #666;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- recorded fixture: not Inkling output -->
+    <p class="note">Recorded short pass</p>
+    <h1>{{PROMPT}}</h1>
+    <p>Draft. One column. No layout, no type system, one unlabeled action.</p>
+    {{SKETCH}}
+    <ul>
+      <li>Headline</li>
+      <li>A sentence</li>
+      <li>A button</li>
+    </ul>
+    <button type="button">Continue</button>
+  </body>
+</html>
