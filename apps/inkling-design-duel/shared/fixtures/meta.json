@@ -1,0 +1,14 @@
+{
+  "low": {
+    "latencyMs": 840,
+    "promptTokens": 420,
+    "completionTokens": 310,
+    "reasoning": "Recorded trace. Short pass: one column, default type, no second section. Not an Inkling sample."
+  },
+  "high": {
+    "latencyMs": 3180,
+    "promptTokens": 420,
+    "completionTokens": 1640,
+    "reasoning": "Recorded trace. Longer pass: navigation, hero, three sections, and one accent. Not an Inkling sample."
+  }
+}

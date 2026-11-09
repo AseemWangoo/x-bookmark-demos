@@ -22,3 +22,4 @@ bun install && bun run dev
 | Agent Desktop Playground | [agent-desktop, @ctatedev](https://x.com/ctatedev/status/2116323148706771302) | https://github.com/AseemWangoo/x-bookmark-demos/pull/8 |
 | Sarvam Prism Desk | [Sarvam Prism, @SarvamAI](https://x.com/SarvamAI/status/2117621415520448838) | https://github.com/AseemWangoo/x-bookmark-demos/pull/9 |
 | Async Subagent Desk | [LangChain async subagents](https://x.com/LangChain/status/2118438264009114101) | https://github.com/AseemWangoo/x-bookmark-demos/pull/10 |
+| Inkling Design Duel | [Inkling 2 Small, @thinkymachines](https://x.com/thinkymachines/status/2118489527362912566) | https://github.com/AseemWangoo/x-bookmark-demos/pull/11 |
