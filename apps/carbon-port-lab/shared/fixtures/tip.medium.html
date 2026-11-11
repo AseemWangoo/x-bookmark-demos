@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tip port · medium</title>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body { display: flex; flex-direction: column; background: #f6f1e8; color: #2a2118; font: 14px/1.4 ui-sans-serif, system-ui, sans-serif; }
+  header { display: flex; gap: 10px; padding: 12px; flex-wrap: wrap; align-items: end; }
+  h1 { margin: 0 8px 0 0; font-size: 16px; }
+  label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; }
+  input { width: 88px; font: inherit; padding: 6px 8px; border: 1px solid #d9cbb8; border-radius: 6px; }
+  canvas { flex: 1; width: 100%; min-height: 200px; display: block; }
+</style>
+</head>
+<body data-effort="medium">
+<header>
+  <h1>Medium · receipt</h1>
+  <label>Bill <input id="bill" type="number" value="84"></label>
+  <label>Tip % <input id="pct" type="number" value="18"></label>
+  <label>People <input id="people" type="number" value="3" min="1"></label>
+</header>
+<canvas id="slip"></canvas>
+<script>
+function quote(bill, percent, people) {
+  const gratuity = bill * (percent / 100);
+  const total = bill + gratuity;
+  return { gratuity, total, each: total / people };
+}
+const canvas = document.getElementById("slip");
+const ctx = canvas.getContext("2d");
+function draw() {
+  const width = canvas.clientWidth;
+  const height = canvas.clientHeight;
+  if (width < 2 || height < 2) {
+    requestAnimationFrame(draw);
+    return;
+  }
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  canvas.width = Math.max(1, Math.floor(width * dpr));
+  canvas.height = Math.max(1, Math.floor(height * dpr));
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const bill = Number(document.getElementById("bill").value) || 0;
+  const percent = Number(document.getElementById("pct").value) || 0;
+  const people = Math.max(1, Number(document.getElementById("people").value) || 1);
+  const result = quote(bill, percent, people);
+  ctx.clearRect(0, 0, width, height);
+  const x = Math.max(16, (width - 240) / 2);
+  const y = 24;
+  ctx.fillStyle = "#fffdf8";
+  ctx.strokeStyle = "#c9b59a";
+  ctx.fillRect(x, y, 240, 180);
+  ctx.strokeRect(x, y, 240, 180);
+  ctx.fillStyle = "#2a2118";
+  ctx.font = "14px ui-monospace, monospace";
+  const rows = [
+    ["Bill", bill.toFixed(2)],
+    ["Tip", result.gratuity.toFixed(2)],
+    ["Total", result.total.toFixed(2)],
+    ["Each", result.each.toFixed(2)],
+  ];
+  rows.forEach((row, index) => {
+    ctx.fillText(row[0], x + 16, y + 36 + index * 32);
+    ctx.fillText(row[1], x + 140, y + 36 + index * 32);
+  });
+}
+["bill", "pct", "people"].forEach((id) => document.getElementById(id).addEventListener("input", draw));
+window.addEventListener("resize", draw);
+draw();
+</script>
+</body>
+</html>

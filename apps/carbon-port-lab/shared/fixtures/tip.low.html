@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tip port · low</title>
+<style>
+  body { margin: 12px; background: #eee; font: 14px sans-serif; }
+  canvas { background: #fff; border: 1px solid #bbb; margin-top: 8px; }
+</style>
+</head>
+<body data-effort="low">
+<h1>Low · numbers</h1>
+<div>Bill <input id="bill" type="number" value="84"></div>
+<div>Percent <input id="pct" type="number" value="18"></div>
+<div>People <input id="people" type="number" value="3"></div>
+<canvas id="slip" width="260" height="90"></canvas>
+<script>
+function tip(bill, percent, people) {
+  var gratuity = bill * (percent / 100);
+  var total = bill + gratuity;
+  return { gratuity: gratuity, total: total, each: total / people };
+}
+const canvas = document.getElementById("slip");
+const ctx = canvas.getContext("2d");
+function draw() {
+  const result = tip(Number(document.getElementById("bill").value) || 0, Number(document.getElementById("pct").value) || 0, Math.max(1, Number(document.getElementById("people").value) || 1));
+  ctx.fillStyle = "#fff";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "#000";
+  ctx.fillText("tip " + result.gratuity.toFixed(2), 8, 22);
+  ctx.fillText("total " + result.total.toFixed(2), 8, 42);
+  ctx.fillText("each " + result.each.toFixed(2), 8, 62);
+}
+["bill", "pct", "people"].forEach((id) => document.getElementById(id).addEventListener("input", draw));
+draw();
+</script>
+</body>
+</html>

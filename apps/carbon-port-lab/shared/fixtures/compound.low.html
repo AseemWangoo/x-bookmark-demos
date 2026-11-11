@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Compound port · low</title>
+<style>
+  body { margin: 12px; background: #efe6d4; color: #222; font: 14px sans-serif; }
+  label { display: block; margin: 6px 0; }
+  canvas { background: #fff; border: 1px solid #999; margin-top: 8px; }
+</style>
+</head>
+<body data-effort="low">
+<h1>Low · one bar</h1>
+<label>Principal <input id="p" type="number" value="1000"></label>
+<label>Rate <input id="r" type="number" value="0.05" step="0.01"></label>
+<label>Years <input id="y" type="number" value="10"></label>
+<canvas id="chart" width="280" height="120"></canvas>
+<script>
+function compound(principal, rate, years) {
+  return principal * Math.pow(1 + rate / 12, 12 * years);
+}
+const canvas = document.getElementById("chart");
+const ctx = canvas.getContext("2d");
+function draw() {
+  const principal = Number(document.getElementById("p").value) || 0;
+  const rate = Number(document.getElementById("r").value) || 0;
+  const years = Number(document.getElementById("y").value) || 0;
+  const total = compound(principal, rate, years);
+  ctx.fillStyle = "#fff";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "#666";
+  const h = Math.max(4, Math.min(100, total / 50));
+  ctx.fillRect(20, canvas.height - h - 8, 40, h);
+  ctx.fillStyle = "#111";
+  ctx.fillText(total.toFixed(2), 70, 30);
+}
+["p", "r", "y"].forEach((id) => document.getElementById(id).addEventListener("input", draw));
+draw();
+</script>
+</body>
+</html>

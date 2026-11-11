@@ -1,0 +1,109 @@
+{
+  "fixtures": [
+    {
+      "id": "paddle-loop",
+      "title": "Paddle loop",
+      "language": "javascript",
+      "sourceFile": "paddle-loop.js",
+      "ports": {
+        "low": {
+          "htmlFile": "paddle-loop.low.html",
+          "latencyMs": 980,
+          "inputTokens": 210,
+          "outputTokens": 480,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 60,
+          "costUsd": 0.00522
+        },
+        "medium": {
+          "htmlFile": "paddle-loop.medium.html",
+          "latencyMs": 2400,
+          "inputTokens": 260,
+          "outputTokens": 1100,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 320,
+          "costUsd": 0.01152
+        },
+        "high": {
+          "htmlFile": "paddle-loop.high.html",
+          "latencyMs": 6400,
+          "inputTokens": 340,
+          "outputTokens": 2200,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 900,
+          "costUsd": 0.02268
+        }
+      }
+    },
+    {
+      "id": "compound",
+      "title": "Compound interest",
+      "language": "python",
+      "sourceFile": "compound.py",
+      "ports": {
+        "low": {
+          "htmlFile": "compound.low.html",
+          "latencyMs": 860,
+          "inputTokens": 180,
+          "outputTokens": 390,
+          "cachedInputTokens": 40,
+          "reasoningTokens": 30,
+          "costUsd": 0.004184
+        },
+        "medium": {
+          "htmlFile": "compound.medium.html",
+          "latencyMs": 2100,
+          "inputTokens": 240,
+          "outputTokens": 980,
+          "cachedInputTokens": 40,
+          "reasoningTokens": 280,
+          "costUsd": 0.010204
+        },
+        "high": {
+          "htmlFile": "compound.high.html",
+          "latencyMs": 5200,
+          "inputTokens": 310,
+          "outputTokens": 1800,
+          "cachedInputTokens": 80,
+          "reasoningTokens": 700,
+          "costUsd": 0.018468
+        }
+      }
+    },
+    {
+      "id": "tip",
+      "title": "Tip split",
+      "language": "javascript",
+      "sourceFile": "tip.js",
+      "ports": {
+        "low": {
+          "htmlFile": "tip.low.html",
+          "latencyMs": 740,
+          "inputTokens": 200,
+          "outputTokens": 360,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 20,
+          "costUsd": 0.004
+        },
+        "medium": {
+          "htmlFile": "tip.medium.html",
+          "latencyMs": 1900,
+          "inputTokens": 250,
+          "outputTokens": 900,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 250,
+          "costUsd": 0.0095
+        },
+        "high": {
+          "htmlFile": "tip.high.html",
+          "latencyMs": 4700,
+          "inputTokens": 300,
+          "outputTokens": 1600,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 640,
+          "costUsd": 0.0166
+        }
+      }
+    }
+  ]
+}

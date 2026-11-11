@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Compound port · medium</title>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body { display: flex; flex-direction: column; background: #f4f7fb; color: #172033; font: 14px/1.4 ui-sans-serif, system-ui, sans-serif; }
+  header { display: flex; gap: 10px; align-items: end; padding: 12px; flex-wrap: wrap; }
+  label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; }
+  input { font: inherit; padding: 6px 8px; border: 1px solid #c5d0de; border-radius: 6px; width: 96px; }
+  h1 { font-size: 15px; margin: 0 12px 0 0; }
+  canvas { flex: 1; width: 100%; min-height: 180px; display: block; }
+</style>
+</head>
+<body data-effort="medium">
+<header>
+  <h1>Medium · yearly bars</h1>
+  <label>Principal <input id="p" type="number" value="1000"></label>
+  <label>Rate <input id="r" type="number" value="0.05" step="0.01"></label>
+  <label>Years <input id="y" type="number" value="10" min="1" max="40"></label>
+</header>
+<canvas id="chart"></canvas>
+<script>
+function balance(principal, rate, year) {
+  return principal * Math.pow(1 + rate / 12, 12 * year);
+}
+const canvas = document.getElementById("chart");
+const ctx = canvas.getContext("2d");
+function resize() {
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  canvas.width = Math.max(1, Math.floor(canvas.clientWidth * dpr));
+  canvas.height = Math.max(1, Math.floor(canvas.clientHeight * dpr));
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+function draw() {
+  if (canvas.clientWidth < 2 || canvas.clientHeight < 2) {
+    requestAnimationFrame(draw);
+    return;
+  }
+  resize();
+  const width = canvas.clientWidth;
+  const height = canvas.clientHeight;
+  const principal = Number(document.getElementById("p").value) || 0;
+  const rate = Number(document.getElementById("r").value) || 0;
+  const years = Math.max(1, Math.min(40, Number(document.getElementById("y").value) || 1));
+  const values = [];
+  for (let year = 1; year <= years; year += 1) values.push(balance(principal, rate, year));
+  const max = Math.max(...values, 1);
+  ctx.clearRect(0, 0, width, height);
+  const gap = 8;
+  const barW = (width - 32 - gap * values.length) / values.length;
+  values.forEach((value, index) => {
+    const h = (value / max) * (height - 36);
+    const x = 20 + index * (barW + gap);
+    ctx.fillStyle = "#2f6fed";
+    ctx.fillRect(x, height - 20 - h, barW, h);
+  });
+  ctx.fillStyle = "#172033";
+  ctx.fillText(values[values.length - 1].toFixed(2), 20, 16);
+}
+["p", "r", "y"].forEach((id) => document.getElementById(id).addEventListener("input", draw));
+window.addEventListener("resize", draw);
+draw();
+</script>
+</body>
+</html>

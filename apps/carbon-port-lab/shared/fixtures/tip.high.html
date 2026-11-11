@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tip port · high</title>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body { display: flex; flex-direction: column; background: #1b1714; color: #f6efe4; font: 14px/1.4 ui-sans-serif, system-ui, sans-serif; }
+  header { display: flex; gap: 12px; padding: 14px 16px 8px; flex-wrap: wrap; align-items: end; }
+  h1 { margin: 0 8px 0 0; font-size: 18px; font-weight: 550; letter-spacing: -0.02em; }
+  label { display: flex; flex-direction: column; gap: 4px; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #d9cbb6; }
+  input { width: 92px; font: 15px/1.2 inherit; padding: 7px 8px; border: 1px solid #3a322b; border-radius: 8px; background: #26201c; color: inherit; }
+  canvas { flex: 1; width: 100%; min-height: 220px; display: block; }
+</style>
+</head>
+<body data-effort="high">
+<header>
+  <h1>High · split</h1>
+  <label>Bill <input id="bill" type="number" value="84"></label>
+  <label>Tip % <input id="pct" type="number" value="18"></label>
+  <label>People <input id="people" type="number" value="4" min="1" max="8"></label>
+</header>
+<canvas id="table"></canvas>
+<script>
+function quote(bill, percent, people) {
+  const gratuity = bill * (percent / 100);
+  const total = bill + gratuity;
+  return { bill, gratuity, total, each: total / people, people };
+}
+const canvas = document.getElementById("table");
+const ctx = canvas.getContext("2d");
+function draw() {
+  const width = canvas.clientWidth;
+  const height = canvas.clientHeight;
+  if (width < 2 || height < 2) {
+    requestAnimationFrame(draw);
+    return;
+  }
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  canvas.width = Math.max(1, Math.floor(width * dpr));
+  canvas.height = Math.max(1, Math.floor(height * dpr));
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const result = quote(
+    Number(document.getElementById("bill").value) || 0,
+    Number(document.getElementById("pct").value) || 0,
+    Math.max(1, Math.min(8, Number(document.getElementById("people").value) || 1)),
+  );
+  ctx.clearRect(0, 0, width, height);
+  const barX = 24;
+  const barY = 28;
+  const barW = Math.max(120, width - 48);
+  const total = Math.max(result.total, 1);
+  ctx.fillStyle = "#c4552a";
+  ctx.fillRect(barX, barY, barW * (result.gratuity / total), 18);
+  ctx.fillStyle = "#e6d3b0";
+  ctx.fillRect(barX + barW * (result.gratuity / total), barY, barW * (result.bill / total), 18);
+  ctx.fillStyle = "#f6efe4";
+  ctx.font = "13px ui-sans-serif, system-ui, sans-serif";
+  ctx.fillText("tip $" + result.gratuity.toFixed(2) + "   total $" + result.total.toFixed(2), barX, barY + 40);
+  const count = result.people;
+  const radius = Math.min(36, (width - 48) / (count * 2.4));
+  for (let index = 0; index < count; index += 1) {
+    const x = 24 + radius + index * ((width - 48 - radius * 2) / Math.max(1, count - 1 || 1));
+    const y = Math.max(barY + 90, height * 0.62);
+    ctx.beginPath();
+    ctx.fillStyle = "#f3e6c4";
+    ctx.arc(count === 1 ? width / 2 : x, y, radius, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = "#1b1714";
+    ctx.textAlign = "center";
+    ctx.fillText("$" + result.each.toFixed(2), count === 1 ? width / 2 : x, y + 4);
+    ctx.textAlign = "left";
+  }
+}
+["bill", "pct", "people"].forEach((id) => document.getElementById(id).addEventListener("input", draw));
+window.addEventListener("resize", draw);
+draw();
+</script>
+</body>
+</html>

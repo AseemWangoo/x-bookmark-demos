@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Compound port · high</title>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body { display: flex; flex-direction: column; background: #f7f3ea; color: #241c14; font: 14px/1.4 "Iowan Old Style", Palatino, Georgia, serif; }
+  header { display: flex; gap: 12px; align-items: end; padding: 14px 16px 8px; flex-wrap: wrap; }
+  h1 { margin: 0 8px 0 0; font-size: 18px; font-weight: 500; }
+  label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; }
+  input { font: 15px/1.2 ui-sans-serif, system-ui, sans-serif; padding: 7px 8px; border: 1px solid #d9cbb6; border-radius: 8px; width: 104px; background: #fffdf8; }
+  .legend { margin-left: auto; display: flex; gap: 12px; font-size: 12px; }
+  i { display: inline-block; width: 10px; height: 10px; margin-right: 4px; }
+  canvas { flex: 1; width: 100%; min-height: 200px; display: block; }
+</style>
+</head>
+<body data-effort="high">
+<header>
+  <h1>High · growth</h1>
+  <label>Principal <input id="p" type="number" value="1000"></label>
+  <label>Rate <input id="r" type="number" value="0.05" step="0.005"></label>
+  <label>Years <input id="y" type="number" value="12" min="1" max="40"></label>
+  <div class="legend"><span><i style="background:#c4552a"></i>Interest</span><span><i style="background:#2f6b4f"></i>Principal</span></div>
+</header>
+<canvas id="chart"></canvas>
+<script>
+function series(principal, rate, years) {
+  const points = [];
+  for (let year = 0; year <= years; year += 1) {
+    const total = principal * Math.pow(1 + rate / 12, 12 * year);
+    points.push({ year, principal, interest: Math.max(0, total - principal), total });
+  }
+  return points;
+}
+const canvas = document.getElementById("chart");
+const ctx = canvas.getContext("2d");
+function draw() {
+  const width = canvas.clientWidth;
+  const height = canvas.clientHeight;
+  if (width < 2 || height < 2) {
+    requestAnimationFrame(draw);
+    return;
+  }
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  canvas.width = Math.max(1, Math.floor(width * dpr));
+  canvas.height = Math.max(1, Math.floor(height * dpr));
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const principal = Number(document.getElementById("p").value) || 0;
+  const rate = Number(document.getElementById("r").value) || 0;
+  const years = Math.max(1, Math.min(40, Number(document.getElementById("y").value) || 1));
+  const points = series(principal, rate, years);
+  const max = Math.max(...points.map((point) => point.total), 1);
+  const left = 44;
+  const bottom = 28;
+  const plotW = width - left - 16;
+  const plotH = height - bottom - 16;
+  ctx.clearRect(0, 0, width, height);
+  ctx.strokeStyle = "rgba(36,28,20,0.15)";
+  ctx.fillStyle = "#241c14";
+  ctx.font = "11px ui-sans-serif, system-ui, sans-serif";
+  for (let step = 0; step <= 4; step += 1) {
+    const y = 16 + plotH * (1 - step / 4);
+    ctx.beginPath();
+    ctx.moveTo(left, y);
+    ctx.lineTo(width - 16, y);
+    ctx.stroke();
+    ctx.fillText(Math.round(max * step / 4).toString(), 4, y + 4);
+  }
+  function xAt(index) { return left + (plotW * index) / (points.length - 1); }
+  function yAt(value) { return 16 + plotH * (1 - value / max); }
+  function area(color, pick) {
+    ctx.beginPath();
+    points.forEach((point, index) => {
+      const x = xAt(index);
+      const y = yAt(pick(point));
+      if (index === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    });
+    ctx.lineTo(xAt(points.length - 1), yAt(0));
+    ctx.lineTo(xAt(0), yAt(0));
+    ctx.closePath();
+    ctx.fillStyle = color;
+    ctx.fill();
+  }
+  area("#2f6b4f", (point) => point.principal);
+  area("rgba(196,85,42,0.85)", (point) => point.total);
+  ctx.fillStyle = "#2f6b4f";
+  ctx.beginPath();
+  points.forEach((point, index) => {
+    const x = xAt(index);
+    const y = yAt(point.principal);
+    if (index === 0) ctx.moveTo(x, yAt(0));
+    ctx.lineTo(x, y);
+  });
+  ctx.lineTo(xAt(points.length - 1), yAt(0));
+  ctx.closePath();
+  ctx.fill();
+  ctx.fillStyle = "#241c14";
+  ctx.fillText(points[points.length - 1].total.toFixed(2), left, 14);
+  ctx.fillText(String(years) + "y", width - 36, height - 8);
+}
+["p", "r", "y"].forEach((id) => document.getElementById(id).addEventListener("input", draw));
+window.addEventListener("resize", draw);
+draw();
+</script>
+</body>
+</html>
