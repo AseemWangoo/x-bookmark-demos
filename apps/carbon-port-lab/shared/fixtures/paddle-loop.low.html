@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Paddle port · low</title>
+<style>
+  body { margin: 16px; background: #cfcfcf; color: #111; font: 13px sans-serif; }
+  h1 { font-size: 14px; margin: 0 0 8px; }
+  canvas { background: #000; display: block; }
+  button { margin-top: 8px; margin-right: 6px; }
+</style>
+</head>
+<body data-effort="low">
+<h1>Low · draft</h1>
+<canvas id="game" width="280" height="160"></canvas>
+<button type="button" id="left">L</button>
+<button type="button" id="right">R</button>
+<script>
+var canvas = document.getElementById("game");
+var ctx = canvas.getContext("2d");
+var ball = { x: 40, y: 30, vx: 2, vy: 2 };
+var paddle = { x: 90, y: 140, w: 50 };
+document.getElementById("left").onclick = function () { paddle.x -= 10; };
+document.getElementById("right").onclick = function () { paddle.x += 10; };
+function tick() {
+  ball.x += ball.vx;
+  ball.y += ball.vy;
+  if (ball.x < 0 || ball.x > canvas.width - 8) ball.vx *= -1;
+  if (ball.y < 0 || ball.y > canvas.height - 8) ball.vy *= -1;
+  ctx.fillStyle = "#000";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "#fff";
+  ctx.fillRect(ball.x, ball.y, 8, 8);
+  ctx.fillRect(paddle.x, paddle.y, paddle.w, 6);
+  setTimeout(tick, 40);
+}
+tick();
+</script>
+</body>
+</html>

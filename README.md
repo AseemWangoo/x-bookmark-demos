@@ -23,3 +23,4 @@ bun install && bun run dev
 | Sarvam Prism Desk | [Sarvam Prism, @SarvamAI](https://x.com/SarvamAI/status/2117621415520448838) | https://github.com/AseemWangoo/x-bookmark-demos/pull/9 |
 | Async Subagent Desk | [LangChain async subagents](https://x.com/LangChain/status/2118438264009114101) | https://github.com/AseemWangoo/x-bookmark-demos/pull/10 |
 | Inkling Design Duel | [Inkling 2 Small, @thinkymachines](https://x.com/thinkymachines/status/2118489527362912566) | https://github.com/AseemWangoo/x-bookmark-demos/pull/11 |
+| Carbon Port Lab | [Gemini 4 Carbon](https://x.com/i/trending/2120289483031556475) | |

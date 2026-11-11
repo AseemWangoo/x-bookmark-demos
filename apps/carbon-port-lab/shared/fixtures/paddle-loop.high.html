@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Paddle port · high</title>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: flex; flex-direction: column;
+    background: radial-gradient(circle at 50% 0%, #1d4a32, #0c1c14 68%);
+    color: #f6f1e4; font: 14px/1.4 Georgia, "Times New Roman", serif;
+  }
+  header { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 16px 6px; }
+  h1 { font-size: 16px; margin: 0; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; }
+  .stats { display: flex; gap: 14px; font-variant-numeric: tabular-nums; }
+  canvas { flex: 1; width: 100%; min-height: 0; display: block; touch-action: none; }
+  footer { display: flex; gap: 8px; padding: 10px 16px 14px; }
+  button {
+    flex: 1; border: 0; border-radius: 999px; padding: 10px 12px;
+    background: #f3e6c4; color: #1a140c; font: inherit; cursor: pointer;
+  }
+</style>
+</head>
+<body data-effort="high">
+<header>
+  <h1>High · table</h1>
+  <div class="stats"><span id="score">0</span><span id="speed">1.0×</span></div>
+</header>
+<canvas id="table"></canvas>
+<footer>
+  <button type="button" id="left">Left</button>
+  <button type="button" id="right">Right</button>
+</footer>
+<script>
+const canvas = document.getElementById("table");
+const ctx = canvas.getContext("2d");
+const scoreEl = document.getElementById("score");
+const speedEl = document.getElementById("speed");
+const ball = { x: 0.5, y: 0.28, vx: 0.34, vy: 0.52, r: 8 };
+const trail = [];
+const paddle = { x: 0.5, w: 0.22, h: 12 };
+let score = 0;
+let held = 0;
+function fit() {
+  const width = canvas.clientWidth;
+  const height = canvas.clientHeight;
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  const nextW = Math.max(1, Math.floor(width * dpr));
+  const nextH = Math.max(1, Math.floor(height * dpr));
+  if (canvas.width !== nextW || canvas.height !== nextH) {
+    canvas.width = nextW;
+    canvas.height = nextH;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  return width >= 2 && height >= 2;
+}
+canvas.addEventListener("pointermove", (event) => {
+  const rect = canvas.getBoundingClientRect();
+  paddle.x = (event.clientX - rect.left) / rect.width;
+});
+document.getElementById("left").addEventListener("pointerdown", () => { held = -1; });
+document.getElementById("right").addEventListener("pointerdown", () => { held = 1; });
+window.addEventListener("pointerup", () => { held = 0; });
+window.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowLeft") held = -1;
+  if (event.key === "ArrowRight") held = 1;
+});
+window.addEventListener("keyup", () => { held = 0; });
+function roundRect(x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + w, y, x + w, y + h, r);
+  ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r);
+  ctx.arcTo(x, y, x + w, y, r);
+  ctx.closePath();
+}
+let last = performance.now();
+function frame(now) {
+  const dt = Math.min(0.032, (now - last) / 1000);
+  last = now;
+  if (!fit()) {
+    requestAnimationFrame(frame);
+    return;
+  }
+  const width = canvas.clientWidth;
+  const height = canvas.clientHeight;
+  if (held) paddle.x += held * dt * 0.8;
+  paddle.x = Math.min(1 - paddle.w / 2, Math.max(paddle.w / 2, paddle.x));
+  ball.x += ball.vx * dt;
+  ball.y += ball.vy * dt;
+  if (ball.x < 0.04 || ball.x > 0.96) ball.vx *= -1;
+  if (ball.y < 0.05) ball.vy = Math.abs(ball.vy);
+  const hitY = 0.9;
+  if (ball.vy > 0 && ball.y > hitY - 0.03 && ball.y < hitY + 0.04 && Math.abs(ball.x - paddle.x) < paddle.w / 2) {
+    const offset = (ball.x - paddle.x) / (paddle.w / 2);
+    ball.vx = offset * 0.7;
+    ball.vy = -Math.abs(ball.vy) * 1.03;
+    ball.y = hitY - 0.03;
+    score += 1;
+    scoreEl.textContent = String(score);
+    speedEl.textContent = (1 + score * 0.04).toFixed(1) + "×";
+  }
+  if (ball.y > 1.08) {
+    ball.x = 0.5; ball.y = 0.24; ball.vx = 0.32; ball.vy = 0.5;
+  }
+  trail.push({ x: ball.x, y: ball.y });
+  if (trail.length > 16) trail.shift();
+  ctx.clearRect(0, 0, width, height);
+  ctx.strokeStyle = "rgba(246,241,228,0.18)";
+  ctx.setLineDash([6, 10]);
+  ctx.beginPath();
+  ctx.moveTo(width / 2, 16);
+  ctx.lineTo(width / 2, height - 16);
+  ctx.stroke();
+  ctx.setLineDash([]);
+  trail.forEach((point, index) => {
+    ctx.fillStyle = "rgba(246,230,190," + (index / trail.length) * 0.45 + ")";
+    ctx.beginPath();
+    ctx.arc(point.x * width, point.y * height, ball.r * (0.35 + index / trail.length), 0, Math.PI * 2);
+    ctx.fill();
+  });
+  const px = (paddle.x - paddle.w / 2) * width;
+  const py = hitY * height;
+  const grd = ctx.createLinearGradient(px, py, px, py + paddle.h);
+  grd.addColorStop(0, "#e7c48a");
+  grd.addColorStop(1, "#8a5a2b");
+  ctx.fillStyle = grd;
+  roundRect(px, py, paddle.w * width, paddle.h, 6);
+  ctx.fill();
+  ctx.fillStyle = "#f7f1df";
+  ctx.beginPath();
+  ctx.arc(ball.x * width, ball.y * height, ball.r, 0, Math.PI * 2);
+  ctx.fill();
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
