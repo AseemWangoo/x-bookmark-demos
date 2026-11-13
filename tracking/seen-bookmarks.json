@@ -107,6 +107,15 @@
       "date": "2026-11-11",
       "approved": "2026-11-11",
       "slug": "carbon-port-lab"
+    },
+    {
+      "id": "vercel-ui-sdk",
+      "title": "UI SDK (Vercel × shadcn: 50+ agent-composable UI behaviors across React/Vue/Svelte/Solid/Web Components, WebMCP built in)",
+      "url": "https://x.com/vercel/status/2120950020249895314",
+      "source": "trending",
+      "date": "2026-11-13",
+      "approved": "2026-11-13",
+      "slug": "ui-sdk-agent-forms"
     }
   ],
   "skipped": []
