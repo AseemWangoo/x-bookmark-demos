@@ -1,0 +1,66 @@
+{
+  "note": "Hand-authored recorded timings and token counts for mock mode. They are not Responses API measurements. costUsd is the Standard-tier (service_tier default) price of these tokens at short-context rates, with reasoning tokens excluded from the sum.",
+  "serviceTier": "default",
+  "kits": {
+    "rc-buggy": {
+      "astra": {
+        "latencyMs": 2140,
+        "costUsd": 0.0504,
+        "usage": {
+          "inputTokens": 1800,
+          "cachedTokens": 0,
+          "cacheWrite30mTokens": 0,
+          "cacheWrite12hTokens": 0,
+          "outputTokens": 900,
+          "reasoningTokens": 280,
+          "totalTokens": 2700,
+          "estimated": false
+        }
+      },
+      "sol": {
+        "latencyMs": 1260,
+        "costUsd": 0.00902,
+        "usage": {
+          "inputTokens": 1500,
+          "cachedTokens": 200,
+          "cacheWrite30mTokens": 0,
+          "cacheWrite12hTokens": 0,
+          "outputTokens": 640,
+          "reasoningTokens": 150,
+          "totalTokens": 2140,
+          "estimated": false
+        }
+      }
+    },
+    "desk-lamp": {
+      "astra": {
+        "latencyMs": 1890,
+        "costUsd": 0.0376,
+        "usage": {
+          "inputTokens": 1200,
+          "cachedTokens": 0,
+          "cacheWrite30mTokens": 0,
+          "cacheWrite12hTokens": 0,
+          "outputTokens": 700,
+          "reasoningTokens": 200,
+          "totalTokens": 1900,
+          "estimated": false
+        }
+      },
+      "sol": {
+        "latencyMs": 1040,
+        "costUsd": 0.00721,
+        "usage": {
+          "inputTokens": 1100,
+          "cachedTokens": 100,
+          "cacheWrite30mTokens": 0,
+          "cacheWrite12hTokens": 0,
+          "outputTokens": 520,
+          "reasoningTokens": 90,
+          "totalTokens": 1620,
+          "estimated": false
+        }
+      }
+    }
+  }
+}
