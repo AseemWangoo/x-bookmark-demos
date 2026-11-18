@@ -13,6 +13,13 @@
       "url": "https://x.com/deepseek_ai/status/2121247896918253875",
       "source": "trending",
       "date": "2026-11-16"
+    },
+    {
+      "id": "gpt-6-2-astra-sol",
+      "title": "GPT-6.2 Astra & Sol (OpenAI flagship + efficient model: cleaner code, better frontends and 3D, fewer output tokens; API gpt-6.2-astra / gpt-6.2-sol, Fast/Ultrafast modes)",
+      "url": "https://x.com/OpenAI/status/2122750124543926515",
+      "source": "trending",
+      "date": "2026-11-18"
     }
   ],
   "approved": [
