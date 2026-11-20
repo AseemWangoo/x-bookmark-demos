@@ -13,13 +13,6 @@
       "url": "https://x.com/deepseek_ai/status/2121247896918253875",
       "source": "trending",
       "date": "2026-11-16"
-    },
-    {
-      "id": "tencent-hy4-flash",
-      "title": "Hy4 Flash (Tencent Hunyuan open-weight MoE: 224B total / 12B active, 1M context, natively multimodal; FP8 + Base weights)",
-      "url": "https://x.com/TencentHunyuan/status/2122912575302119554",
-      "source": "trending",
-      "date": "2026-11-20"
     }
   ],
   "approved": [
@@ -124,7 +117,7 @@
     },
     {
       "id": "vercel-ui-sdk",
-      "title": "UI SDK (Vercel × shadcn: 50+ agent-composable UI behaviors across React/Vue/Svelte/Solid/Web Components, WebMCP built in)",
+      "title": "UI SDK (Vercel \u00d7 shadcn: 50+ agent-composable UI behaviors across React/Vue/Svelte/Solid/Web Components, WebMCP built in)",
       "url": "https://x.com/vercel/status/2120950020249895314",
       "source": "trending",
       "date": "2026-11-13",
@@ -139,6 +132,15 @@
       "date": "2026-11-18",
       "approved": "2026-11-18",
       "slug": "astra-assembly-guide"
+    },
+    {
+      "id": "tencent-hy4-flash",
+      "title": "Hy4 Flash (Tencent Hunyuan open-weight MoE: 224B total / 12B active, 1M context, natively multimodal; FP8 + Base weights)",
+      "url": "https://x.com/TencentHunyuan/status/2122912575302119554",
+      "source": "trending",
+      "date": "2026-11-20",
+      "approved": "2026-11-20",
+      "slug": "hy4-flash-whiteboard-to-tasks"
     }
   ],
   "skipped": []
