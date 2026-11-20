@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#e4d8c4" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#1d4e89"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="780" fill="#f4efe4"/>
+  <rect width="1200" height="780" fill="url(#grid)"/>
+  <text x="48" y="64" font-family="DejaVu Sans, sans-serif" font-size="36" font-weight="700" fill="#1c1917">RFC-41 · ONE PASS</text>
+  <text x="48" y="98" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#57534e">Sample architecture board · hand-authored · not a photograph</text>
+  <rect x="60" y="200" width="280" height="180" rx="16" fill="#fffdf8" stroke="#1d4e89" stroke-width="3"/>
+  <text x="84" y="270" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="700" fill="#1e3a5f">Edge gateway</text>
+  <text x="84" y="312" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#44403c">six images + thread</text>
+  <line x1="340" y1="290" x2="450" y2="290" stroke="#1d4e89" stroke-width="3" marker-end="url(#arrow)"/>
+  <g>
+    <title>Task index</title>
+    <rect x="460" y="200" width="280" height="180" rx="16" fill="#dbeafe" stroke="#1d4ed8" stroke-width="3"/>
+    <text x="484" y="270" font-family="DejaVu Sans, sans-serif" font-size="28" font-weight="700" fill="#1e3a8a">Task index</text>
+    <text x="484" y="312" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#1c1917">JSON board</text>
+  </g>
+  <line x1="740" y1="290" x2="850" y2="290" stroke="#1d4e89" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="860" y="200" width="280" height="180" rx="16" fill="#fffdf8" stroke="#166534" stroke-width="3"/>
+  <text x="884" y="270" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="700" fill="#14532d">Object store</text>
+  <text x="884" y="312" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#44403c">blobs, seven days</text>
+  <rect x="60" y="460" width="680" height="200" rx="16" fill="#fffdf8" stroke="#1c1917" stroke-width="3"/>
+  <text x="88" y="530" font-family="DejaVu Sans, sans-serif" font-size="28" font-weight="700" fill="#1c1917">No separate OCR.</text>
+  <text x="88" y="578" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#44403c">One Chat Completions call. Nia.</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#e4d8c4" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="780" fill="#f4efe4"/>
+  <rect width="1200" height="780" fill="url(#grid)"/>
+  <text x="48" y="64" font-family="DejaVu Sans, sans-serif" font-size="36" font-weight="700" fill="#1c1917">WEEK OF 17 NOV</text>
+  <text x="48" y="98" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#57534e">Sample whiteboard · hand-authored · not a photograph</text>
+  <g font-family="DejaVu Sans, sans-serif" font-size="20" fill="#44403c">
+    <text x="90" y="160">Mon</text>
+    <text x="300" y="160">Tue</text>
+    <text x="520" y="160">Wed</text>
+    <text x="740" y="160">Thu</text>
+    <text x="960" y="160">Fri 21</text>
+  </g>
+  <rect x="70" y="180" width="180" height="280" rx="12" fill="#fffdf8" stroke="#d6cfc2" stroke-width="2"/>
+  <rect x="280" y="180" width="180" height="280" rx="12" fill="#fffdf8" stroke="#d6cfc2" stroke-width="2"/>
+  <rect x="500" y="180" width="200" height="280" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="3"/>
+  <text x="518" y="250" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#1e3a8a">Page budget</text>
+  <text x="518" y="290" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#1c1917">Sam</text>
+  <rect x="730" y="180" width="180" height="280" rx="12" fill="#fffdf8" stroke="#d6cfc2" stroke-width="2"/>
+  <rect x="940" y="180" width="200" height="280" rx="12" fill="#ffedd5" stroke="#c2410c" stroke-width="3"/>
+  <text x="956" y="250" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#7c2d12">Checkout retries</text>
+  <text x="956" y="290" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#1c1917">Priya</text>
+  <g>
+    <title>Open: partial auth as success?</title>
+    <rect x="70" y="500" width="520" height="180" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="3"/>
+    <text x="96" y="570" font-family="DejaVu Sans, sans-serif" font-size="28" font-weight="700" fill="#78350f">Open: partial auth</text>
+    <text x="96" y="616" font-family="DejaVu Sans, sans-serif" font-size="28" font-weight="700" fill="#78350f">as success?</text>
+  </g>
+  <text x="640" y="580" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#44403c">Friday standup still owns #pay-red.</text>
+</svg>
