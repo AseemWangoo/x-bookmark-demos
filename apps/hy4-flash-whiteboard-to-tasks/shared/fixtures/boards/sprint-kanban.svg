@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#e4d8c4" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="780" fill="#f4efe4"/>
+  <rect width="1200" height="780" fill="url(#grid)"/>
+  <text x="48" y="58" font-family="DejaVu Sans, sans-serif" font-size="36" font-weight="700" fill="#1c1917">SPRINT 47 · CHECKOUT</text>
+  <text x="48" y="88" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#57534e">Sample whiteboard · hand-authored · not a photograph</text>
+  <rect x="40" y="112" width="360" height="630" rx="16" fill="#fffdf8" stroke="#d6cfc2" stroke-width="2"/>
+  <rect x="420" y="112" width="360" height="630" rx="16" fill="#fffdf8" stroke="#d6cfc2" stroke-width="2"/>
+  <rect x="800" y="112" width="360" height="630" rx="16" fill="#fffdf8" stroke="#d6cfc2" stroke-width="2"/>
+  <text x="64" y="150" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#9f1239">NOW</text>
+  <text x="444" y="150" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#1d4e89">NEXT</text>
+  <text x="824" y="150" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#9a3412">BLOCKED</text>
+  <g>
+    <title>Retry checkout 5xx - Priya - Fri 21 Nov</title>
+    <rect x="56" y="168" width="320" height="148" rx="12" fill="#ffedd5" stroke="#c2410c" stroke-width="3"/>
+    <text x="72" y="206" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#7c2d12">Retry checkout 5xx</text>
+    <text x="72" y="240" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#1c1917">Priya · Fri 21 Nov</text>
+    <text x="72" y="274" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#9a3412">blocked on key rotation</text>
+  </g>
+  <rect x="56" y="336" width="320" height="130" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="3"/>
+  <text x="72" y="378" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#1e3a8a">Page budget &lt; 2/hr</text>
+  <text x="72" y="414" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#1c1917">Sam · Wednesday</text>
+  <rect x="436" y="168" width="328" height="140" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+  <text x="452" y="210" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#14532d">Customer note</text>
+  <text x="452" y="248" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#1c1917">Lee · after legal copy</text>
+  <rect x="816" y="168" width="328" height="160" rx="12" fill="#ffe4e6" stroke="#be123c" stroke-width="3"/>
+  <text x="832" y="210" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#9f1239">Status page copy</text>
+  <text x="832" y="248" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#1c1917">Jules · legal hold</text>
+  <text x="832" y="284" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#9f1239">do not say payments down</text>
+</svg>

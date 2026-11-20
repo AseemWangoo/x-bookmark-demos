@@ -26,3 +26,4 @@ bun install && bun run dev
 | Carbon Port Lab | [Gemini 4 Carbon](https://x.com/i/trending/2120289483031556475) | https://github.com/AseemWangoo/x-bookmark-demos/pull/12 |
 | UI SDK Agent Forms | [UI SDK, @vercel](https://x.com/vercel/status/2120950020249895314) | https://github.com/AseemWangoo/x-bookmark-demos/pull/13 |
 | Astra Assembly Guide | [GPT-6.2 Astra & Sol, @OpenAI](https://x.com/OpenAI/status/2122750124543926515) | https://github.com/AseemWangoo/x-bookmark-demos/pull/14 |
+| Hy4 Flash Whiteboard to Tasks | [Hy4 flash, @TencentHunyuan](https://x.com/TencentHunyuan/status/2122912575302119554) | |
