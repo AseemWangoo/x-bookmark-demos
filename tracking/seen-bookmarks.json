@@ -13,6 +13,13 @@
       "url": "https://x.com/deepseek_ai/status/2121247896918253875",
       "source": "trending",
       "date": "2026-11-16"
+    },
+    {
+      "id": "inkling-2-mini",
+      "title": "Inkling 2 Mini (Thinking Machines open-weights looped transformer, 26B params, runs on a 32GB laptop, agentic work)",
+      "url": "https://x.com/thinkymachines/status/2123871643797995872",
+      "source": "trending",
+      "date": "2026-11-23"
     }
   ],
   "approved": [
@@ -117,7 +124,7 @@
     },
     {
       "id": "vercel-ui-sdk",
-      "title": "UI SDK (Vercel \u00d7 shadcn: 50+ agent-composable UI behaviors across React/Vue/Svelte/Solid/Web Components, WebMCP built in)",
+      "title": "UI SDK (Vercel × shadcn: 50+ agent-composable UI behaviors across React/Vue/Svelte/Solid/Web Components, WebMCP built in)",
       "url": "https://x.com/vercel/status/2120950020249895314",
       "source": "trending",
       "date": "2026-11-13",
