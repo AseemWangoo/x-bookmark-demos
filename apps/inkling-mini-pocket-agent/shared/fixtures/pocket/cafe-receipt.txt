@@ -1,0 +1,7 @@
+POCKET CAFE
+Hand-authored sample receipt. Not a scan.
+
+Espresso        4.50
+Oat milk        0.75
+Total           5.25
+Card •••• 4242
