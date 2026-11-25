@@ -13,13 +13,6 @@
       "url": "https://x.com/deepseek_ai/status/2121247896918253875",
       "source": "trending",
       "date": "2026-11-16"
-    },
-    {
-      "id": "llamaindex-ocria-1",
-      "title": "OCRia-1 (LlamaIndex open-weight 4B VLM for document OCR: page images to structured Markdown with tables, charts, math; on Ollama)",
-      "url": "https://x.com/jerryjliu0/status/2125266115874144473",
-      "source": "trending",
-      "date": "2026-11-25"
     }
   ],
   "approved": [
@@ -124,7 +117,7 @@
     },
     {
       "id": "vercel-ui-sdk",
-      "title": "UI SDK (Vercel × shadcn: 50+ agent-composable UI behaviors across React/Vue/Svelte/Solid/Web Components, WebMCP built in)",
+      "title": "UI SDK (Vercel \u00d7 shadcn: 50+ agent-composable UI behaviors across React/Vue/Svelte/Solid/Web Components, WebMCP built in)",
       "url": "https://x.com/vercel/status/2120950020249895314",
       "source": "trending",
       "date": "2026-11-13",
@@ -157,6 +150,15 @@
       "date": "2026-11-23",
       "approved": "2026-11-23",
       "slug": "inkling-mini-pocket-agent"
+    },
+    {
+      "id": "llamaindex-ocria-1",
+      "title": "OCRia-1 (LlamaIndex open-weight 4B VLM for document OCR: page images to structured Markdown with tables, charts, math; on Ollama)",
+      "url": "https://x.com/jerryjliu0/status/2125266115874144473",
+      "source": "trending",
+      "date": "2026-11-25",
+      "approved": "2026-11-25",
+      "slug": "ocria-table-lens"
     }
   ],
   "skipped": []
