@@ -28,3 +28,4 @@ bun install && bun run dev
 | Astra Assembly Guide | [GPT-6.2 Astra & Sol, @OpenAI](https://x.com/OpenAI/status/2122750124543926515) | https://github.com/AseemWangoo/x-bookmark-demos/pull/14 |
 | Hy4 Flash Whiteboard to Tasks | [Hy4 flash, @TencentHunyuan](https://x.com/TencentHunyuan/status/2122912575302119554) | https://github.com/AseemWangoo/x-bookmark-demos/pull/15 |
 | Inkling Mini Pocket Agent | [Inkling 2 Mini, @thinkymachines](https://x.com/thinkymachines/status/2123871643797995872) | https://github.com/AseemWangoo/x-bookmark-demos/pull/16 |
+| OCRia Table Lens | [OCRia-1, @jerryjliu0](https://x.com/jerryjliu0/status/2125266115874144473) | https://github.com/AseemWangoo/x-bookmark-demos/pull/17 |
