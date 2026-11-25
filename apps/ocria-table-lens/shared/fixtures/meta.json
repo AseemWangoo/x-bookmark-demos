@@ -1,0 +1,9 @@
+{
+  "id": "harbor-pine-dock-4",
+  "title": "Harbor & Pine Provisions — Dock 4 receiving ticket",
+  "label": "Hand-authored sample. Not model output. Not a LlamaIndex asset.",
+  "image": "/fixtures/page.png",
+  "sourceHtml": "page.html",
+  "markdown": "recorded.md",
+  "note": "The PNG is a screenshot of page.html. Both were written for this demo. OCRia-1 did not produce them."
+}

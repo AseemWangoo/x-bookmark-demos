@@ -1,0 +1,55 @@
+Transcribe this Page in markdown, be as accurate as possible in your transcription, do not describe/summarize.
+
+Formatting:
+- Use ** for bold text and * for italic text.
+- Use ~~ text ~~ for strikethrough text. Only use this for text that is visually stricken through.
+- Use <mark> and </mark> tags for highlighted text, aka text to wich a stabilo hilight was applied Only use to hilight sentence or words, not full block of text/tables. Use HTML color names for different colors of highlight, e.g. <mark style="background-color: blue">text</mark>. Do not use mark for first cell of a table, as it is often used for the header and should not be highlighted.
+- Use <u> and </u> tags for underlined text.
+- Use \* for bullet points and - for sub-bullets.
+- Use > for blockquotes.
+- Use ` for inline code.
+- Use ``` for code blocks.
+- Use [ ] for empty checkboxes.
+- Use [x] for checked checkboxes.
+- Use <sub> and </sub> for subscript text.
+- Use <sup> and </sup> for superscript text.
+- Use [___] for empty fields to fill, if the field is already filled, represent them as field content in markdown.
+- Use $...$ for inline equations and $$...$$ for display equations. Do NOT use \(...\) or \[...\] — the corpus uses dollar delimiters (43,604 inline occurrences against 35 in the parenthesis form).
+- Chemical formulas are NOT LaTeX: write them as plain text with <sub> and <sup>, e.g. K<sub>3</sub>Fe(CN)<sub>6</sub> and 2H<sub>2</sub>O, never $K_3Fe(CN)_6$. Reserve $...$ for real mathematics.
+
+Tables:
+- Output tables in HTML when possible.
+- Table should not be use for page formatting (column or grid like layout), but only for tabular data.
+- Some table may be irregular, with merged cells, missing cells, or inconsistent formatting, or have an exotic structure (like a triangular table). Do your best to represent the table accurately with correct reading order.
+
+Charts, Graphs, and Figures:
+- IMPORTANT: Every chart or graph MUST be converted into an HTML <table>. This is non-negotiable. The table represent the chart data, not the chart layout. Focus on accurately capturing the underlying data and relationships in the table format.
+- FORBIDDEN outputs for charts: <iframe>, <embed>, <canvas>, <img>, <object>, links, URLs, or plain-text descriptions. Using any of these for a chart is an automatic FAIL.
+- MERMAID FALLBACK: For diagrams, figures and flowcharts that are better represented as a graph than as a table (architecture diagrams, flowcharts, org charts, entity relationships), use Mermaid syntax INSTEAD of an HTML table and output it between ```mermaid and ``` tags. This exception applies ONLY to diagrams; a chart or graph plotting data values is still an HTML <table>.
+
+Images:
+- Transcribe any text printed inside the image as markdown.
+- Reference the image itself as ![label: description], where label is exactly one of: logo, icon, photo, illustration, screenshot, map, signature, seal, code, drawing, image. Use the caption or wording the page itself prints for the description; do not invent one, and do not describe an image the page says nothing about.
+
+Page furniture:
+- Output the page header (if any) between <page_header> and </page_header> tags.
+- Output the page footer (if any) between <page_footer> and </page_footer> tags.
+- Output the printed page number (if any) between <page_number> and </page_number> tags, nested inside the header or footer band it sits in.
+
+Watermarks:
+- Output a watermark stamped across the page (DRAFT, OBSOLETE, CONFIDENTIAL) between <watermark> and </watermark> tags, not as body text.
+
+Multi-column Text:
+- Unroll multi-column text into a single column format.
+
+Completeness:
+- Ensure ALL content from the page is transcribed without omissions.
+- As this is a transcription task, fidelity is of upmost importance. You should NEVER truncate or shorten tabular data. Any instance of table data that looks like "[...table data continues in rows n - m ...]" or omits rows or columns will result in an automatic FAIL.
+
+Accuracy:
+- Maintain text and formatting as close to the original as possible within the constraints of Markdown syntax.
+
+Handwriting / Cursive Text:
+- If the page contains handwriting or cursive text, ignore the OCR output for those sections and rely solely on the screenshot to transcribe that content.
+
+Output result between ```markdown and ```
