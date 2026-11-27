@@ -13,6 +13,13 @@
       "url": "https://x.com/deepseek_ai/status/2121247896918253875",
       "source": "trending",
       "date": "2026-11-16"
+    },
+    {
+      "id": "psychoscript",
+      "title": "Psychoscript (OpenCode's confined, resumable JS runtime: bytecode VM, pause mid-run, snapshot to bytes, resume anywhere; npm psychoscript, MIT)",
+      "url": "https://x.com/opencode/status/2125702030832349374",
+      "source": "trending",
+      "date": "2026-11-27"
     }
   ],
   "approved": [
@@ -117,7 +124,7 @@
     },
     {
       "id": "vercel-ui-sdk",
-      "title": "UI SDK (Vercel \u00d7 shadcn: 50+ agent-composable UI behaviors across React/Vue/Svelte/Solid/Web Components, WebMCP built in)",
+      "title": "UI SDK (Vercel × shadcn: 50+ agent-composable UI behaviors across React/Vue/Svelte/Solid/Web Components, WebMCP built in)",
       "url": "https://x.com/vercel/status/2120950020249895314",
       "source": "trending",
       "date": "2026-11-13",
