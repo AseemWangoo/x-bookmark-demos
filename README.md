@@ -29,4 +29,4 @@ bun install && bun run dev
 | Hy4 Flash Whiteboard to Tasks | [Hy4 flash, @TencentHunyuan](https://x.com/TencentHunyuan/status/2122912575302119554) | https://github.com/AseemWangoo/x-bookmark-demos/pull/15 |
 | Inkling Mini Pocket Agent | [Inkling 2 Mini, @thinkymachines](https://x.com/thinkymachines/status/2123871643797995872) | https://github.com/AseemWangoo/x-bookmark-demos/pull/16 |
 | OCRia Table Lens | [OCRia-1, @jerryjliu0](https://x.com/jerryjliu0/status/2125266115874144473) | https://github.com/AseemWangoo/x-bookmark-demos/pull/17 |
-| Psychoscript Approval Runner | [Psychoscript, @opencode](https://x.com/opencode/status/2125702030832349374) | |
+| Psychoscript Approval Runner | [Psychoscript, @opencode](https://x.com/opencode/status/2125702030832349374) | https://github.com/AseemWangoo/x-bookmark-demos/pull/18 |
